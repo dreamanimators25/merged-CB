@@ -1,0 +1,365 @@
+/* 
+  Localizable.strings
+  iList Ambassador
+
+  Created by Pontus Andersson on 20/04/16.
+  Copyright © 2016 iList AB. All rights reserved.
+*/
+
+"ILIST_CONTACT_MAIL" = "support@ilist.se";
+"ILIST_BUGREPORT_MAIL" = "support@ilist.se";
+"ILIST_SHARE_LINK" = "www.ilistambassador.com/tellafriend";
+
+"URL_WEBSITE" = "http://www.ilistambassador.com";
+"URL_AGREEMENTS" = "http://ilistambassador.com/agreement/iphone.html";
+
+"URL_LINKED_IN" = "https://www.linkedin.com/company/1910621";
+"URL_LINKED_IN_APP" = "https://www.linkedin.com/company/1910621";
+
+"URL_INSTAGRAM" = "http://www.instagram.com/ilistambassador";
+"URL_INSTAGRAM_APP" = "instagram://user?username=ilistambassador";
+
+"URL_FACEBOOK" = "https://www.facebook.com/ilistambassador";
+"URL_FACEBOOK_APP" = "fb://profile/1390248061304144";
+
+"URL_TWITTER" = "https://twitter.com/iList_inc";
+"URL_TWITTER_APP" = "twitter://user?id=275520326";
+
+
+"ILIST" = "iList";
+"AMBASSADOR" = "Ambassador";
+"AMBASSADORS" = "Ambassadörer";
+
+"ABOUT_TEXT" = "Tack för att du använder iList Ambassador, en kommunikationsplattform som ingen annan. Vi erbjuder ett snabbt, roligt och fritt sätt för kommunikation mellan anställda och arbetsgivare, varumärken och varumärkesambassadörer, artister och deras fans eller mellan människor.\n\nVi tror på yttrandefriheten och rätten för alla att kunna rekommendera sin livsstil och det man tror på. Detta är grunden i iList Ambassador och de värden som vi hoppas skall spridas samtidigt som vi skapar en global delnings och kommunikationsplattform där varumärken möter människor som möter människor.\n\nDu kan ansluta dig till din arbetsplats, dina favoritvarumärken eller hjälpa människor att hitta det goda i livet som ett par nya skor, en artist, ett hotell, ett recept på en äppelpaj.\n\nDu som användare är viktig och du kan genom iList Ambassador bli en global trendsättare.\n\nVälkommen att ta klivet att bli en Ambassadör för din livsstil.\n\nVi hoppas verkligen att du gillar att använda iList Ambassador.\n\nMvh, David Larsson och Johan Viberg, grundare av iList.\n\nGlöm inte bort att följa oss på Facebook och Instagram.\n\nCheers =)";
+
+
+"ABOUT_THE_COMPANY" = "Om företaget";
+"CONTACT_TEXT" = "iList inc är en startup med kontor i Redwood City i Silicon Valley samt i Uppsala. Vårt mål är att revolutionera marknadsföringen för varumärken samt sättet människor rekommenderar saker till varandra i vardagen. Om du vill komma i kontakt med oss för en kaffe eller har några frågor så skicka gärna ett mail.\n\niList inc\nGSV Labs\n425 Broadway Street\nRedwood City CA 94063, USA\ninfo@ilistambassador.com";
+
+
+"YES" = "Ja";
+"NO" = "Nej";
+"OK" = "OK";
+"CANCEL" = "Avbryt";
+"DONE" = "Klar";
+"NEXT" = "Nästa";
+"CONTINUE" = "Fortsätt";
+"ERROR" = "Error";
+"ERROR_OPS" = "Ojdå..";
+"COULD_NOT_VERIFY_CREDENTIALS" = "Dina uppgifter kunde inte verifieras. Kolla dina inloggningsuppgifter och försök igen.";
+"UNABLE_TO_LOGIN" = "Inloggnind misslyckades. Försök igen senare.";
+"UNABLE_TO_RESET_PASSWORD" = "Emailen finns inte registrerad.";
+"ENTER_ALL_REGISTER_FIELDS" = "Du måste fylla i alla fält.";
+"PASSWORD_DOES_NOT_MATCH" = "Lösenorden matchar inte.";
+
+"SEARCHABLE" = "Sökbar för andra användare";
+"SHOW CONTENT" = "Visa kanaler för andra användare";
+"SHOW WALLET" = "Visa Plånbok";
+"OVER 21" = "Över 21";
+"GENDER" = "Välj kön";
+"EDIT PASSWORD" = "Ändra lösenord";
+"PRIVACY" = "Integritetspolicy";
+"PRIVAC" = "Integritets";
+"ADD FRIEND" = "Lägg till vän";
+"EDIT PROFILE" = "Redigera profil";
+"BACK" = "Tillbaka";
+"POST" = "Posta";
+"UPDATE" = "Uppdatera";
+"ADD" = "Lägg till";
+"EDIT" = "Redigera";
+"CHANGE" = "Ändra";
+"TRY_AGAIN" = "Försök igen";
+"SEND" = "Skicka";
+"DECLINE" = "Avböj";
+"ACCEPT" = "Acceptera";
+"OPTIONS" = "Alternativ";
+"CLOSE" = "Stäng";
+"NEXT" = "Nästa";
+"THANK_YOU" = "Tack";
+"SEARCH" = "Sök";
+"EXPIRES" = "Utgår";
+"DELETE" = "Radera";
+"SAVE" = "Spara";
+"UNSAVE" = "Ospara";
+"USE" = "Använd";
+"OPEN" = "Öppna";
+"READ_MORE" = "Läs mer";
+
+"CLAIM" = "Hämta";
+
+"CREATE_ACCOUNT" = "Skapa konto";
+"BRAND" = "Brand";
+"BRAND_NAME" = "Varumärkesnamn";
+"PHONE_NUMBER" = "Telefonnummer";
+"PLEASE_ENTER_BRAND_NAME" = "Ange ditt varumärkesnamn";
+"PLEASE_ENTER_EMAIL" = "Ange ditt varumärkes e-postadress";
+"BRAND_INFO" = "Varumärke";
+"SIGNUP_BRAND_INFO" = "Genom att teckna ett varumärkeskonto intygar jag att jag är godkänd av varumärket och har rättighet att företräda, representera och använda varumärket ovan.";
+"SIGNUP_BRAND_USER_INFO" = "Genom att teckna ett varumärkeskonto intygar jag att jag är godkänd av varumärket och har rättighet att företräda, representera och använda varumärket ovan.";
+"CONTACT" = "Kontakt";
+
+"REPORT" = "Rapportera";
+"WE_WILL_REVIEW_THIS_SHORTLY" = "Vi ser över det här så snart vi kan";
+
+"SAVED_TO_PROFILE" = "Sparad till profil!";
+"UNSAVED_FROM_PROFILE" = "Osparad från profil!";
+
+"NO_LONGER_UNDER_SAVED_RECOMMENDATIONS" = "Denna rekommendation är inte längre sparad i din profil";
+"FOUND_UNDER_SAVED_RECOMMENDATIONS" = "Rekommendationen är nu sparad i din profil";
+
+"REGISTER_AS_BRAND" = "Registrera som Varumärke";
+"LOGIN_WITH_FACEBOOK" = "Logga in med Facebook";
+"LOGIN_WITH_EMAIL" = "Logga in med email";
+"LOGIN_WITH_TWITTER" = "Logga in med Twitter";
+"LOGOUT" = "Logga ut";
+"FORGOT_PASSWORD" = "Glömt lösenordet?";
+"FORGOT_PASSWORD_MESSAGE" = "Ange din e-postaddress:";
+"FORGOT_PASSWORD_SUCCESS" = "Lösenordet är skickat";
+
+"EMAIL" = "Email";
+"PASSWORD" = "Lösenord";
+"FIRST_NAME" = "Förnamn";
+"LAST_NAME" = "Efternamn";
+"PASSWORD_SENT_TO" = "Lösenord skickat till";
+"PLEASE_ENTER_EMAIL" = "Fyll i din email-address";
+"PLEASE_ENTER_PASSWORD" = "Fyll i ett lösenord";
+"TOO_SHORT_PASSWORD" = "Lösenordet är för kort";
+"INVALID_FIRST_NAME" = "Ogiltigt förnamn";
+"INVALID_LAST_NAME" = "Ogiltigt efternamn";
+"INVALID_EMAIL" = "Ogiltig email-adress";
+"TO_SHORT_PASSWORD" = "Lösenordet är för kort";
+"PASSWORD_MISMATCH" = "Dina lösenord matchar inte";
+"REPEAT_PASSWORD" = "Repetera lösenord";
+
+"REGISTER_USER_AGREEMENTS" = "Genom registrering accepterar du iList:s Användarvillkor";
+
+"PROFILE" = "Profil";
+"SETTINGS" = "Inställningar";
+"DISCOVER" = "Utforska";
+
+"CONNECT" = "Anslut";
+"CODE" = "Code";
+"YOUR_CODE" = "Din kod";
+"CONNECTION_CODE" = "Anslutningskod";
+"REGISTER" = "Registrera";
+"LOGIN" = "Logga in";
+"SCAN_QR_CODE" = "Scanna din QR kod";
+"OR_ENTER_CODE" = "Eller ange din kod nedan";
+"OR" = "Eller";
+"CONNECTION_CODE_DOES_NOT_EXISTS" = "Anslutningskoden existerar inte";
+
+"ENTER_PERSONAL_RECOMMENDATION_URL" = "Skriv URL till din rekommendation (valbart)";
+"MAXIMUM_7_HASHTAGS" = "Endast 7 hashtags tillåtna";
+"INVALID_LINK_FORMAT" = "Ogiltigt länkformat";
+"ONLY_ALPHANUMERIC_CHARACTERS_IN_HASHTAG" = "Endast alphanumeriska bokstäver i hashtags";
+
+"ENTER_HASHTAG_SEARCH" = "Skriv en hashtag du vill söka";
+"ENTER_USER_SEARCH" = "Skriv namn på ambassadör";
+"SEARCH" = "Sök";
+"SEARCH_USERS_PLACEHOLDER" = "Sök användare";
+"SEARCH_AMBASSADORS" = "Sök ambassadörer";
+"MY_BRANDS" = "Mina varumärken";
+"BRANDS" = "Varumärken";
+"BRAND_RECOMMENDATIONS" = "Från varumärken";
+"RECEIVED" = "Mottagna";
+"NEW_BRANDS" = "Nya varumärken";
+
+"SEND_REQUEST" = "Skicka förfrågan";
+"REMOVE" = "Ta bort";
+"REMOVE_CONNECTION" = "Ta bort kontakt";
+"CONNECTION_REQUEST_SENT" = "Kontaktförfrågan skickad";
+"CONNECTION_REQUEST_ALREADY_SENT" = "En kontaktförfrågan finns redan";
+"REMOVE_CONNECTION_MESSAGE" = "Ta bort %@ från dina kontakter?";
+"CANCEL_REQUEST" = "Avbryt förfrågan";
+"WEBSITE" = "Websida";
+"RECOMMEND" = "Rekommendera";
+"RECOMMENDED_BY" = "Rekommenderat av";
+
+"KEEP_IN_TOUCH" = "Håll kontakten";
+"CONNECTION" = "Kontakt";
+"CONNECTIONS" = "Kontakter";
+"CONNECTION_REQUEST" = "Kontaktförfrågan";
+"CONNECTION_REQUESTS" = "Nya Kontakter";
+
+"CONNECTION_REQUEST_WAITING_FOR_USER" = "Kontaktförfrågan skickad.";
+"CONNECTION_REQUEST_WANTS_TO_CONNECT" = "Vill skapa kontakt med dig.";
+
+"INBOX" = "Brevlåda";
+"NO_INBOX_YET" = "Du har inga meddelanden";
+
+"ACTIVITY" = "Aktivitet";
+"ACTIVITIES" = "Aktiviteter";
+"NO_ACTIVITIES_YET" = "Inga aktiviteter ännu";
+
+"PERSONAL" = "Personliga";
+"SAVED" = "Sparade";
+
+"NO_PERSONAL_RECOMMENDATIONS" = "Du har inte skapat några personliga rekommendationer. Tryck på kameran för att skapa din första rekommendation";
+"NO_SAVED_RECOMMENDATIONS" = "Du har inte sparat några rekommendationer. Spara rekommendationer du gillar med menyn i varje enskild rekommendation.";
+"NO_RECOMMENDATIONS_FOUND" = "Inga rekommendationer hittades";
+"NO_AMBASSADORS_FOUND" = "Inga ambassadörer hittades";
+
+"TUTORIAL_TEXT_1" = "Välkommen till din profil";
+"TUTORIAL_TEXT_2" = "Samla framgångspoäng genom att skapa populära rekommendationer";
+"TUTORIAL_TEXT_3" = "Tryck på kameran för att skapa din första rekommendation";
+"TUTORIAL_TEXT_4" = "Tryck här för att utforska andra människors rekommendationer";
+
+"STREAM" = "Strömmen";
+"EXPLORE" = "Utforska";
+"LISTS" = "Listor";
+"LIKES" = "Gillningar";
+"FOLLOWS" = "Följer";
+"WORLD" = "Världen";
+
+"INVITES" = "Inbjudningar";
+"CONNECTED_BRANDS" = "Kopplade varumärken";
+"REQUESTS" = "Förfrågningar";
+"REQUESTS_SENT" = "Förfrågningar sända";
+
+"MY_AMBASSADORSHIPS" = "MINA AMBASSADÖRSSKAP";
+"RECOMMENDATION" = "REKOMMENDATION";
+"RECOMMENDATIONS" = "REKOMMENDATIONER";
+"RECEIVED_RECOMMENDATIONS" = "MOTTAGNA REKOMMENDATIONER";
+"USE_RECOMMENDATION" = "ANVÄND REKOMMENDATION";
+"USE_RECOMMENDATION_INFO" = "När du har använt den här rekommendationen så kommer du inte kunna använda den igen.";
+
+"SUCCESS" = "Framgång";
+"SUCCESS_POINTS" = "Framgångspoäng";
+"HASHTAG" = "Hashtag";
+"HASHTAGS" = "Hashtags";
+
+"MISSION" = "Uppdrag";
+"MISSIONS" = "Uppdrag";
+"NO_MISSIONS_AVAILABLE" = "Inga uppdrag tillgängliga för tillfället. Kolla lite senare!";
+"DEADLINE" = "Slutdatum";
+
+"SHARE" = "Dela";
+"SHARED" = "Delad";
+"SAVE_OR_USE" = "Spara / Använd";
+"LINK" = "Länk";
+"FACEBOOK" = "Facebook";
+"TWITTER" = "Twitter";
+"INSTAGRAM" = "Instagram";
+"MESSENGER" = "Messenger";
+
+"SHARE_CONTENT_TITLE" = "Dela innehåll";
+"SHARE_CONTENT_MESSAGE" = "Hur vill du dela detta innehåll?";
+"SHARE_CONTENT_IN_APP" = "Inuti appen";
+"SHARE_CONTENT_OUTBOUND" = "Delningsbar länk";
+"SHARE_LINK" = "Dela länk";
+
+"CHANGE_PROFILE_PICTURE" = "Ändra profilbild";
+"CHANGE_COVER_PICTURE" = "Ändra coverbild";
+"CHOOSE_FROM_LIBRARY" = "Välj från bild-biblioteket";
+"TAKE_NEW_PHOTO" = "Ta nytt foto";
+
+"ABOUT_ILIST" = "Om iList";
+"ABOUT_ILIST_UPPERCASE" = "OM iLIST";
+"USER_AGREEMENTS" = "User Agreement";
+"CONTACT" = "Kontakt";
+"BUG_REPORT" = "Bug rapportering";
+"WATCH_INTRODUCTION" = "Se introduktion";
+"LOGOUT" = "Logga ut";
+
+"PULL_TO_REFRESH" = "Dra för att uppdatera";
+
+"EMPTY_SEARCH_INFO_NO_SEARCH" = "Är din vän inte här än?";
+"EMPTY_SEARCH_INFO" = "Hittar du inte den du letar efter?";
+"TELL_A_FRIEND" = "Berätta för en vän";
+"INVITE_A_FRIEND" = "Bjud in en vän";
+"NOT_AVAILABLE" = "Ej tillgänglig";
+
+"ARE_YOU_SURE" = "Är du säker?";
+"YES_IM_SURE" = "Jag är säker";
+
+"DELETE_PERSONAL_RECOMMENDATION" = "Radera din rekommendation";
+"ACTION_CAN_NOT_BE_UNDONE" = "Detta val går ej att ångra.";
+
+"UNABLE_TO_SHARE_CONTENT" = "Det gick inte att dela innehållet";
+"SUCCESSFULLY_SHARED_ON" = "Din rekommendation delades på ";
+
+"LETS_DO_IT" = "Gör det!";
+
+"ERROR_EMAIL_ALREADY_EXISTS" = "Denna email-adress är redan registrerad. Om du har glömt ditt lösenord - använd \"Glömt lösenord\" tillägget på föregående sida.";
+
+
+"INTRO_TEXT_1" = "Hitta och sök rekommendationer från världens alla hörn.";
+"INTRO_TEXT_2" = "Bli en ambassadör för din livsstil och inspirera andra genom att skapa egna rekommendationer med bild och text.";
+"INTRO_TEXT_3" = "Länka din rekommendation till videos, platser eller musik.";
+"INTRO_TEXT_4" = "Bli upptäckt av varumärken och få inbjudningar till exklusiva ambassadörskap.";
+"INTRO_TEXT_5" = "Representera varumärket genom att rekommendera dem till andra.";
+"INTRO_TEXT_6" = "Ta del av roliga uppdrag som snabbt ökar dina framgångspoäng.";
+
+"ENTER_CODE_TO_CONNECT" = "Ange kod";
+"ENTER_CODE_TO_CONNECT_INFO" = "Kom ihåg att varumärket måste godkänna din ansökan för att du skall erhålla ditt ambassadörskap";
+
+
+"AMBASSADORSHIP_ALREADY_EXISTS" = "Ambassadörskap existerar redan";
+"NO_BRAND_WITH_GIVEN_CODE" = "Tyvärr har du angivit en ogiltig kod";
+"PLEASE_ENTER_A_CODE" = "Vänligen slå in din kod";
+
+"UNABLE_TO_ACCEPT_AMBASSADORSHIP" = "Tyvärr gick inte informationen fram, försök igen senare.";
+"UNABLE_TO_DECLINE_AMBASSADORSHIP" = "Tyvärr gick inte informationen fram, försök igen senare.";
+"UNABLE_TO_REMOVE_AMBASSADORSHIP" = "Tyvärr gick inte informationen fram, försök igen senare.";
+
+"NO_OFFERS_AVAILABLE" = "Inget innehåll finns tillgängligt just nu";
+"RECOMMENDATION_AVAILABLE_UNDER_RECEIVED_RECOMMENDATIONS" = "Rekommendationen finns nu bland dina mottagna rekommendationer";
+"RECOMMENDATION_SUCCESSFULLY_SENT_TO_FRIEND" = "Din rekommendation har skickats till %@.";
+"RECOMMENDATION_ALREADY_CLAIMED" = "Den här rekommendationen finns redan bland mottagarens mottagna rekommendationer.";
+
+"SEND_TO" = "Skicka till";
+"RECOMMEND_TO" = "Rekommendera till";
+"SHARE_OUTSIDE_APPLICATION" = "Någon som inte har appen";
+"SCAN_THE_QR_TO_CONTINUE" = "Scanna QR-koden för att gå vidare";
+
+"NO_RECEIVED_CONTENT" = "Du har inget innehåll för tillfället";
+"NO_CONNCTED_BRANDS" = "Just nu har du inga anslutna varumärken";
+"THE_RECOMMENDATION_HAS_BEEN_USED" = "Rekommendationen är nu använd";
+"THE_RECOMMENDATION_HAS_ALREADY_BEEN_USED" = "Rekommendationen har redan använts!";
+"NO_MORE_RECOMMENDATIONS_AVAILABLE" = "Slut på rekommendationer";
+
+"FAKE_USER" = "Ej riktigt användare";
+"NOT_A_RECOMMENDATION" = "Ingen rekommendation";
+"EXPLICIT_RECOMMENDATION" = "Stötande material";
+"BAD_LINK" = "Dålig länk";
+"OTHER" = "Annat";
+"LOADING" = "Laddar";
+
+"REVOKE" = "Säg upp";
+"REVOKE_AMBASSDORSHIP" = "Säg upp ambassadörsskap";
+"REVOKE_AMBASSDORSHIP_MESSAGE" = "Vill du säga upp ditt ambassadörsskap för %@?";
+
+"CONTENT_ERROR_RESPONSE" = "Något gick fel. Vänligen försök igen.";
+"CONTENT_NOT_FOUND_ALERT" = "Det gick inte att öppna innehållet";
+"CONTENT_SUCCESSFULLY_CLAIMED" = "Innehållet är hämtat";
+"CONTENT_SUCCESSFULLY_CLAIMED_INFO" = "Vill du använda det nu?";
+"CONTENT_HAS_BEEN_USED" = "'%@'\nhar nu blivit använd.";
+
+"USE_NOW" = "Använd nu";
+"SAVE_FOR_LATER" = "Spara till senare";
+
+"OFFICIAL_HASHTAG" = "Officiell hashtag";
+
+"YOU" = "Du";
+"NOTIFICATIONS" = "Händelser";
+"NO_NOTIFICATIONS" = "Inga händelser än";
+"NOTIFICATION_LIKED" = "%@ gillade just din rekommendation";
+"NOTIFICATION_FOLLOWING" = "%@ har valt att följa dig";
+"NOTIFICATION_SAVED_RECOMMENDATION" = "%@ sparade din personliga rekommendation";
+"NOTIFICATION_SHARED_RECOMMENDATION" = "%@ delade din personliga rekommendation";
+
+"NOTIFICATION_USED_CONTENT" = "%@ använde ditt innehåll";
+"NOTIFICATION_NEW_CONTENT_BRAND" = "Det finns nu nytt innehåll från %@";
+"NOTIFICATION_NEW_CONTENT_AMBASSADOR" = "%@ skickade dig innehåll";
+"NOTIFICATION_REMOVED_AMBASSADORSHIP" = "Ditt ambassadörskap för %@ har tagits bort";
+"NOTIFICATION_NEW_AMBASSADORSHIP" = "Du är nu ambassadör för %@";
+
+
+"DISCLAIMER" = "Friskrivning";
+"BRAND_CONTENT_DISCLAIMER_TEXT" = "Varumärket/Avsändaren reserverar sig mot ev. slutförsäljning och eventuella tryckfel i content, annonser och erbjudanden. Varumärket/Avsändaren förbehåller sig eventuella lokala prisskillnader. Varumärket/Avsändaren förbehåller sig rätten att utan att meddela ändra innehållet, erbjudandet, rekommendationen. iList inc ansvarar inte för innehållet i något content. Allt ansvar är reglerad av användaravtalet för iList Ambassador.";
+
+"OUTBOUND_SHARE_TEXT" = "Varsågod! Här är en länk till ditt innehåll i iList Ambassador.";
+
+"NO_FOLLOWING_TEXT" = "Just nu följer du ingen men om du klickar på fliken ambassadörer och sedan väljer att följa ett par personer så skapar du enkelt ett flöde med de saker dom rekommenderar.";
+
+"NO_CONTENT_AVAILABLE" = "Det finns inget innehåll tillgängligt just nu";

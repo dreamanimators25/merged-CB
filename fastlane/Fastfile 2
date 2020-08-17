@@ -1,0 +1,65 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "2.5.0"
+
+default_platform :ios
+
+platform :ios do
+
+    before_all do
+      cocoapods
+    end
+
+    desc "Submit a new Beta Build to Fabric"
+    desc "This will also make sure the profile is up to date"
+    lane :beta do
+      ilist_identifier = "se.ilist.iList"
+      ENV["APP_IDENTIFIER"] = ilist_identifier
+      # match(app_identifier: ilist_identifier)
+      
+      gym(
+        scheme: "iList Ambassador",  # Build your app - more options available
+        # provisioning_profile_path: "./CodeSigning/iList_Ambassador_Adhoc.mobileprovision"
+        )
+      crashlytics(
+      	crashlytics_path: "./Pods/Crashlytics",
+        api_token: "5369785c92e87f89fbb04198b6764dfc81f7a3b7",
+        build_secret: "95f63de96d36bbfdd27ac9935cb33fd8cde953f166b8ac27bd227ec7b3f2b552",
+        groups: ["ilist-ambassador-beta-testers"],
+        notifications: true
+      )
+    end
+
+    desc "Deploy a new version to the App Store"
+    lane :release do
+      ilist_identifier = "se.ilist.iList"
+      ENV["APP_IDENTIFIER"] = ilist_identifier
+      # match(app_identifier: ilist_identifier)
+
+      gym(scheme: "iList Ambassador") # Build your app - more options available
+      deliver(force: true)
+    end
+
+    after_all do |lane|
+      # This block is called, only if the executed lane was successful
+
+      # slack(
+      #   message: "Successfully deployed new App Update."
+      # )
+    end
+
+    error do |lane, exception|
+      # slack(
+      #   message: exception.message,
+      #   success: false
+      # )
+    end
+end
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md

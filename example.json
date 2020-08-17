@@ -1,0 +1,133 @@
+{
+  "id" : 100,
+  "identity" : "baba",
+  "pages" : [
+    {
+      "id" : 1226,
+      "frame_url" : null,
+      "identity" : "information",
+      "number_of_uses" : 1,
+      "updated" : "2017-08-25 10:34:49+0000",
+      "is_shareable" : false,
+      "consume_action" : 0,
+      "reward" : [
+        100
+      ],
+      "order" : 0,
+      "created" : "2017-08-25 10:34:49+0000",
+      "components" : [
+        {
+          "id" : 1012,
+          "file" : null,
+          "updated" : "2017-08-25 10:34:50+0000",
+          "content_page" : 1226,
+          "margin_bottom" : 0,
+          "type" : "text",
+          "order" : 0,
+          "margin_edge_percentage" : 0.2,
+          "meta" : {
+            "font_size" : "30",
+            "color" : "#ffffff",
+            "font_weight" : "bold"
+          },
+          "created" : "2017-08-25 10:34:50+0000",
+          "shareable" : false,
+          "thumbnail" : null,
+          "margin_horizontal" : 0
+        },
+        {
+          "id" : 1013,
+          "file" : null,
+          "updated" : "2017-08-25 10:34:50+0000",
+          "content_page" : 1226,
+          "margin_bottom" : 0,
+          "type" : "text",
+          "order" : 0,
+          "margin_edge_percentage" : 0.2,
+          "meta" : {
+            "font_size" : "16",
+            "color" : "#ffffff",
+            "text" : "Grattis!"
+          },
+          "created" : "2017-08-25 10:34:50+0000",
+          "shareable" : false,
+          "thumbnail" : null,
+          "margin_horizontal" : 0
+        }
+      ],
+      "background_sound_url" : null,
+      "contents" : [
+
+      ],
+      "name" : "",
+      "backgrounds" : [
+        {
+          "updated" : "2017-08-25 10:34:49+0000",
+          "pages" : [
+            1226
+          ],
+          "id" : 1168,
+          "order" : 0,
+          "file" : null,
+          "file_url" : null,
+          "meta" : {
+
+          },
+          "created" : "2017-08-25 10:34:49+0000",
+          "type" : "image",
+          "name" : ""
+        }
+      ]
+    }
+  ],
+  "updated" : "2017-08-25 10:34:49+0000",
+  "brand" : 12,
+  "disclaimer" : null,
+  "title" : "Autoreward 2 views",
+  "icon_url" : "https:\/\/ilistambassador.s3.amazonaws.com:443\/coffee-icon.jpg",
+  "order" : 0,
+  "reward_type" : 3,
+  "auto_share_type" : 0,
+  "created" : "2017-08-25 10:34:49+0000",
+  "auto_share_all_contents" : true,
+  "auto_share_num" : 2,
+  "content" : [
+    660,
+    662,
+    665,
+    666,
+    670,
+    678,
+    681,
+    697,
+    711,
+    739,
+    740,
+    741,
+    742,
+    750,
+    751,
+    752,
+    761,
+    763,
+    765,
+    771,
+    780,
+    781,
+    782,
+    783,
+    785,
+    786,
+    788,
+    794,
+    795,
+    798,
+    806,
+    807,
+    815,
+    820,
+    822,
+    824,
+    825
+  ]
+}

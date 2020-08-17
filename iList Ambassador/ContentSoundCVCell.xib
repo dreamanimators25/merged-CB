@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContentSoundCVCell" id="gTV-IL-0wX" customClass="ContentSoundCVCell" customModule="AppIn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uw7-dm-w4s">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h2k-g6-73f">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Uw7-dm-w4s" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="15y-bJ-t1K"/>
+                <constraint firstAttribute="bottom" secondItem="h2k-g6-73f" secondAttribute="bottom" id="8jL-gA-5qA"/>
+                <constraint firstItem="h2k-g6-73f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N6F-zB-4Fb"/>
+                <constraint firstAttribute="trailing" secondItem="Uw7-dm-w4s" secondAttribute="trailing" id="ZSu-bY-eZU"/>
+                <constraint firstAttribute="bottom" secondItem="Uw7-dm-w4s" secondAttribute="bottom" id="eEC-Yg-maI"/>
+                <constraint firstItem="h2k-g6-73f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pHm-Qa-GR8"/>
+                <constraint firstItem="Uw7-dm-w4s" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="u06-oL-8hl"/>
+                <constraint firstAttribute="trailing" secondItem="h2k-g6-73f" secondAttribute="trailing" id="yvM-BD-uBZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="h2k-g6-73f" id="Bsq-BH-vPK"/>
+                <outlet property="pageBackgroundView" destination="Uw7-dm-w4s" id="v0A-Ia-8SX"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="92"/>
+        </collectionViewCell>
+    </objects>
+</document>

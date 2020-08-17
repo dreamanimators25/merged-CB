@@ -1,0 +1,364 @@
+/* 
+  Localizable.strings
+  iList Ambassador
+
+  Created by Pontus Andersson on 20/04/16.
+  Copyright © 2016 iList AB. All rights reserved.
+*/
+
+"ILIST_CONTACT_MAIL" = "support@ilist.se";
+"ILIST_BUGREPORT_MAIL" = "support@ilist.se";
+"ILIST_SHARE_LINK" = "www.ilistambassador.com/tellafriend";
+
+"URL_WEBSITE" = "http://www.ilistambassador.com";
+"URL_AGREEMENTS" = "http://www.jokk.app/agreementsv";
+
+"URL_LINKED_IN" = "https://www.linkedin.com/company/1910621";
+"URL_LINKED_IN_APP" = "https://www.linkedin.com/company/1910621";
+
+"URL_INSTAGRAM" = "http://www.instagram.com/ilistambassador";
+"URL_INSTAGRAM_APP" = "instagram://user?username=ilistambassador";
+
+"URL_FACEBOOK" = "https://www.facebook.com/ilistambassador";
+"URL_FACEBOOK_APP" = "fb://profile/1390248061304144";
+
+"URL_TWITTER" = "https://twitter.com/iList_inc";
+"URL_TWITTER_APP" = "twitter://user?id=275520326";
+
+
+"ILIST" = "iList";
+"AMBASSADOR" = "Ambassador";
+"AMBASSADORS" = "Ambassadors";
+
+"ABOUT_TEXT" = "Thank you for using iList Ambassador, a content sharing communication platform like no other. We like to offer a fast, fun and free way of communication to be used by employees and their employer, brands and their brand ambassadors, artists and their fans or by people to people.\n\nWe believe in freedom of speech and the right for everyone to be an ambassador for their lifestyle and beliefs. This is the soul of iList Ambassador and the key value that we hope to spread in the same time we are creating a content driven global platform for both brands and people. You can connect to your workplace, your favorite brands or help people find the good things in life weather it´s a new pair of shoes, a presidential candidate, an artist, a hotell, a gym or a recipe for apple pie. You are important and you may become a potential global influencer.\n\nWelcome to take the step in becoming an ambassador for your lifestyle.\n\nWe really hope you will enjoy using iList Ambassador.\n\nBest, David Larsson and Johan Viberg, founders of iList.\n\nAlso don´t forget to follow us on Facebook and Instagram.\n\nCheers =)";
+
+"ABOUT_THE_COMPANY" = "About the company";
+"CONTACT_TEXT" = "iList inc is a tech startup located in Redwood City California US and Uppsala Sweden. Our goal is to revolutionize marketing as well as the way people recommend things to eachother on a daily basis. If you like to get in touch with us for a cup of coffee or any other matter please send us an e-mail.\n\niList inc\nGSV Labs\n425 Broadway Street\nRedwood City CA 94063, USA\ninfo@ilistambassador.com";
+
+
+"YES" = "Yes";
+"NO" = "No";
+"OK" = "OK";
+"CANCEL" = "Cancel";
+"DONE" = "Done";
+"NEXT" = "Next";
+"CONTINUE" = "Continue";
+"ERROR" = "Error";
+"ERROR_OPS" = "Oppss..";
+"COULD_NOT_VERIFY_CREDENTIALS" = "Your credentials could not be verified. Check your login details and try again.";
+"UNABLE_TO_LOGIN" = "Unable to login. Try again later.";
+"UNABLE_TO_RESET_PASSWORD" = "Email does not exist.";
+"ENTER_ALL_REGISTER_FIELDS" = "You need to fill out all fields.";
+"PASSWORD_DOES_NOT_MATCH" = "Password Does not match.";
+
+"SEARCHABLE" = "Searchable to other users";
+"SHOW CONTENT" = "Show channels to other users";
+"SHOW WALLET" = "Show Wallet";
+"OVER 21" = "Over 21 Years Old";
+"GENDER" = "Select Gender";
+"EDIT PASSWORD" = "Edit Password";
+"PRIVACY" = "Privacy Policy";
+"PRIVAC" = "Privacy";
+"ADD FRIEND" = "Add Friend";
+"EDIT PROFILE" = "Edit Profile";
+"BACK" = "Back";
+"POST" = "Post";
+"UPDATE" = "Update";
+"ADD" = "Add";
+"EDIT" = "Edit";
+"CHANGE" = "Change";
+"TRY_AGAIN" = "Try again";
+"SEND" = "Send";
+"DECLINE" = "Decline";
+"ACCEPT" = "Accept";
+"OPTIONS" = "Options";
+"CLOSE" = "Close";
+"NEXT" = "Next";
+"THANK_YOU" = "Thank you";
+"SEARCH" = "Search";
+"EXPIRES" = "Expires";
+"DELETE" = "Delete";
+"SAVE" = "Save";
+"UNSAVE" = "Unsave";
+"USE" = "Use";
+"OPEN" = "Open";
+"READ_MORE" = "Read more";
+
+"CLAIM" = "Claim";
+
+"CREATE_ACCOUNT" = "Create Account";
+"BRAND" = "Brand";
+"BRAND_NAME" = "Brand name";
+"PHONE_NUMBER" = "Phone number";
+"PLEASE_ENTER_BRAND_NAME" = "Please enter your brands name";
+"PLEASE_ENTER_EMAIL" = "Please enter your brands email";
+"BRAND_INFO" = "Brand info";
+"SIGNUP_BRAND_INFO" = "By signing up a brand account I certify that I am authorized by the brand above and have the right to represent and create an account for the brand.";
+"SIGNUP_BRAND_USER_INFO" = "By signing up a brand account I certify that I am authorized by the brand above and have the right to represent and create an account for the brand.";
+"CONTACT" = "Contact";
+
+"REPORT" = "Report";
+"WE_WILL_REVIEW_THIS_SHORTLY" = "We will review this shortly";
+
+"SAVED_TO_PROFILE" = "Saved to profile!";
+"UNSAVED_FROM_PROFILE" = "Unsaved from profile!";
+
+"NO_LONGER_UNDER_SAVED_RECOMMENDATIONS" = "This recommendation is no longer saved in your profile";
+"FOUND_UNDER_SAVED_RECOMMENDATIONS" = "This recommendation is now saved in your profile";
+
+"REGISTER_AS_BRAND" = "Register as Brand";
+"LOGIN_WITH_FACEBOOK" = "Login with Facebook";
+"LOGIN_WITH_EMAIL" = "Login with email";
+"LOGIN_WITH_TWITTER" = "Login with Twitter";
+"LOGOUT" = "Log out";
+"FORGOT_PASSWORD" = "Forgot password?";
+"FORGOT_PASSWORD_MESSAGE" = "Enter your email address:";
+"FORGOT_PASSWORD_SUCCESS" = "Password successfully sent";
+
+"EMAIL" = "Email";
+"PASSWORD" = "Password";
+"FIRST_NAME" = "First name";
+"LAST_NAME" = "Last name";
+"PASSWORD_SENT_TO" = "Password sent to";
+"PLEASE_ENTER_EMAIL" = "Please enter your email";
+"PLEASE_ENTER_PASSWORD" = "Please enter a password";
+"TOO_SHORT_PASSWORD" = "Too short password";
+"INVALID_FIRST_NAME" = "Invalid first name";
+"INVALID_LAST_NAME" = "Invalid last name";
+"INVALID_EMAIL" = "Invalid email";
+"TO_SHORT_PASSWORD" = "To short password";
+"PASSWORD_MISMATCH" = "Your passwords do not match";
+"REPEAT_PASSWORD" = "Repeat password";
+
+
+"REGISTER_USER_AGREEMENTS" = "By signing up you accept iList's User Agreements";
+
+"PROFILE" = "Profile";
+"SETTINGS" = "Settings";
+"DISCOVER" = "Discover";
+
+"YOUR_CODE" = "Your code";
+"CONNECTION_CODE" = "Connection code";
+"REGISTER" = "Register";
+"LOGIN" = "Login";
+"SCAN_QR_CODE" = "Scan your QR code";
+"OR_ENTER_CODE" = "Or enter your code below";
+"OR" = "Or";
+"CONNECTION_CODE_DOES_NOT_EXISTS" = "Connection code does not exists";
+
+"ENTER_PERSONAL_RECOMMENDATION_URL" = "Enter URL for you recommendation (optional)";
+"MAXIMUM_7_HASHTAGS" = "Only 7 hashtags allowed";
+"INVALID_LINK_FORMAT" = "Invalid link format";
+"ONLY_ALPHANUMERIC_CHARACTERS_IN_HASHTAG" = "Only alphanumeric characters in hashtag";
+
+"ENTER_HASHTAG_SEARCH" = "Enter # you like to search";
+"ENTER_USER_SEARCH" = "Enter name of ambassador";
+"SEARCH" = "Search";
+"SEARCH_USERS_PLACEHOLDER" = "Search users";
+"SEARCH_AMBASSADORS" = "Search ambassadors";
+"MY_BRANDS" = "My Brands";
+"BRANDS" = "Brands";
+"BRAND_RECOMMENDATIONS" = "Brand recommendations";
+"RECEIVED" = "Received";
+"NEW_BRANDS" = "New Brands";
+
+"SEND_REQUEST" = "Send request";
+"CONNECTION_REQUEST_SENT" = "Connection request sent";
+"CONNECTION_REQUEST_ALREADY_SENT" = "Connection request already sent";
+"REMOVE" = "Remove";
+"REMOVE_CONNECTION" = "Remove connection";
+"REMOVE_CONNECTION_MESSAGE" = "Remove %@ from your connections?";
+"CANCEL_REQUEST" = "Cancel request";
+"WEBSITE" = "Website";
+"RECOMMEND" = "Recommend";
+"RECOMMENDED_BY" = "Recommended by";
+
+"KEEP_IN_TOUCH" = "Keep in touch";
+"CONNECTION" = "Connection";
+"CONNECTIONS" = "Connections";
+"CONNECTION_REQUEST" = "Connection request";
+"CONNECTION_REQUESTS" = "Connection requests";
+
+"CONNECTION_REQUEST_WAITING_FOR_USER" = "Connection request sent.";
+"CONNECTION_REQUEST_WANTS_TO_CONNECT" = "Would like to connect with you.";
+
+"INBOX" = "Inbox";
+"NO_INBOX_YET" = "You have no messages";
+
+"ACTIVITY" = "Activity";
+"ACTIVITIES" = "Activities";
+"NO_ACTIVITIES_YET" = "No activities yet";
+
+"PERSONAL" = "Personal";
+"SAVED" = "Saved";
+
+"NO_PERSONAL_RECOMMENDATIONS" = "You have not created any personal recommendations yet. Press the camera to create your first recommendation";
+"NO_SAVED_RECOMMENDATIONS" = "No have not saved any recommendations yet. Save recommendations you like in the options menu for a recommendation.";
+"NO_RECOMMENDATIONS_FOUND" = "No recommendations were found";
+"NO_AMBASSADORS_FOUND" = "No ambassadors were found";
+
+"TUTORIAL_TEXT_1" = "Welcome to your profile";
+"TUTORIAL_TEXT_2" = "Gain success points by creating popular recommendations";
+"TUTORIAL_TEXT_3" = "Press the camera to create your first recommendation";
+"TUTORIAL_TEXT_4" = "Click here to explore other peoples recommendations";
+
+"STREAM" = "Stream";
+"EXPLORE" = "Explore";
+"LISTS" = "Lists";
+"LIKES" = "Likes";
+"FOLLOWS" = "Follows";
+"WORLD" = "World";
+
+"INVITES" = "Invites";
+"CONNECTED_BRANDS" = "Connected brands";
+"REQUESTS" = "Requests";
+"REQUESTS_SENT" = "Requests sent";
+
+"MY_AMBASSADORSHIPS" = "MY AMBASSADORSHIPS";
+"RECOMMENDATION" = "RECOMMENDATION";
+"RECOMMENDATIONS" = "RECOMMENDATIONS";
+"RECEIVED_RECOMMENDATIONS" = "RECEIVED RECOMMENDATIONS";
+"USE_RECOMMENDATION" = "USE RECOMMENDATION";
+"USE_RECOMMENDATION_INFO" = "Once you have used this recommendation, you will not be able to use it again.";
+
+"SUCCESS" = "Success";
+"SUCCESS_POINTS" = "Success points";
+"HASHTAG" = "Hashtag";
+"HASHTAGS" = "Hashtags";
+
+"MISSION" = "Mission";
+"MISSIONS" = "Missions";
+"NO_MISSIONS_AVAILABLE" = "No missions available at the moment. Check back later!";
+"DEADLINE" = "Deadline";
+
+"SHARE" = "Share";
+"SHARED" = "Shared";
+"SAVE_OR_USE" = "Save / Use";
+"LINK" = "LINK";
+"FACEBOOK" = "Facebook";
+"TWITTER" = "Twitter";
+"INSTAGRAM" = "Instagram";
+"MESSENGER" = "Messenger";
+
+"SHARE_CONTENT_TITLE" = "Share content";
+"SHARE_CONTENT_MESSAGE" = "How would you like to share this content?";
+"SHARE_CONTENT_IN_APP" = "Inside app";
+"SHARE_CONTENT_OUTBOUND" = "Shareable link";
+"SHARE_LINK" = "Share link";
+
+"CHANGE_PROFILE_PICTURE" = "Change profile picture";
+"CHANGE_COVER_PICTURE" = "Change cover photo";
+"CHOOSE_FROM_LIBRARY" = "Choose from photo library";
+"TAKE_NEW_PHOTO" = "Take new photo";
+
+"ABOUT_ILIST" = "About iList";
+"ABOUT_ILIST_UPPERCASE" = "ABOUT iLIST";
+"USER_AGREEMENTS" = "User Agreement";
+"CONTACT" = "Contact";
+"BUG_REPORT" = "Bug report";
+"WATCH_INTRODUCTION" = "Watch introduction";
+"LOGOUT" = "Log out";
+
+"PULL_TO_REFRESH" = "Pull to refresh";
+
+"EMPTY_SEARCH_INFO_NO_SEARCH" = "Is your friend not here yet?";
+"EMPTY_SEARCH_INFO" = "Don't find who you're looking for?";
+"TELL_A_FRIEND" = "Tell a friend";
+"INVITE_A_FRIEND" = "Invite a friend";
+"NOT_AVAILABLE" = "Not available";
+
+"ARE_YOU_SURE" = "Are you sure?";
+"YES_IM_SURE" = "I am sure";
+
+"DELETE_PERSONAL_RECOMMENDATION" = "Delete your recommendation";
+"ACTION_CAN_NOT_BE_UNDONE" = "This action can not be undone.";
+
+"UNABLE_TO_SHARE_CONTENT" = "Unable to share the content";
+"SUCCESSFULLY_SHARED_ON" = "Your recommendation was shared on";
+
+"LETS_DO_IT" = "Let's do it!";
+
+"ERROR_EMAIL_ALREADY_EXISTS" = "This email is already registered. If you forgot your password - use the \"Forgot Password\" feature on the previous page. ";
+
+"INTRO_TEXT_1" = "Search and find recommendations from around the world.";
+"INTRO_TEXT_2" = "Become an ambassador for your lifestyle and influence others by creating photo based recommendations.";
+"INTRO_TEXT_3" = "Link your recommendations to videos, places or music.";
+"INTRO_TEXT_4" = "Get discovered by brands and get exclusive ambassadorships.";
+"INTRO_TEXT_5" = "Represent the brand by recommending it to others.";
+"INTRO_TEXT_6" = "Boost your success points by fulfilling missions.";
+
+"CONNECT" = "Connect";
+"CODE" = "Code";
+"YOUR_CODE" = "Your code";
+"ENTER_CODE_TO_CONNECT" = "Enter code to connect";
+"ENTER_CODE_TO_CONNECT_INFO" = "Remember, the brand might have to accept you as an ambassador before you get to access their channel";
+
+
+"AMBASSADORSHIP_ALREADY_EXISTS" = "Ambassadorship already exists";
+"NO_BRAND_WITH_GIVEN_CODE" = "No brand was found with the given code";
+"PLEASE_ENTER_A_CODE" = "Please enter a code";
+
+"UNABLE_TO_ACCEPT_AMBASSADORSHIP" = "Unable to accept ambassadorship at the moment. Please try again later.";
+"UNABLE_TO_DECLINE_AMBASSADORSHIP" = "Unable to decline ambassadorship at the moment. Please try again later.";
+"UNABLE_TO_REMOVE_AMBASSADORSHIP" = "Unable to remove ambassadorship at the moment. Please try again later.";
+
+"NO_OFFERS_AVAILABLE" = "No content available";
+"RECOMMENDATION_AVAILABLE_UNDER_RECEIVED_RECOMMENDATIONS" = "The content has been claimed and is now available at your received content";
+"RECOMMENDATION_SUCCESSFULLY_SENT_TO_FRIEND" = "The recommendation has successfully been sent to %@.";
+"RECOMMENDATION_ALREADY_CLAIMED" = "This recommendation is already appearing among the recipients received recommendations.";
+
+"SEND_TO" = "Send to";
+"RECOMMEND_TO" = "Recommend to";
+"SHARE_OUTSIDE_APPLICATION" = "Anyone outside the app";
+"SCAN_THE_QR_TO_CONTINUE" = "Scan the QR-code to continue";
+
+"NO_RECEIVED_CONTENT" = "You have no received content at the moment";
+"NO_CONNCTED_BRANDS" = "You have no connected brands at the moment.";
+"THE_RECOMMENDATION_HAS_BEEN_USED" = "The recommendation has been used";
+"THE_RECOMMENDATION_HAS_ALREADY_BEEN_USED" = "The recommendation has already been used!";
+"NO_MORE_RECOMMENDATIONS_AVAILABLE" = "No more recommendations is available";
+
+"FAKE_USER" = "Fake user";
+"NOT_A_RECOMMENDATION" = "Not a recommendation";
+"EXPLICIT_RECOMMENDATION" = "Explicit recommendation";
+"BAD_LINK" = "Bad link";
+"OTHER" = "Other";
+"LOADING" = "Loading";
+
+"REVOKE" = "Revoke";
+"REVOKE_AMBASSDORSHIP" = "Revoke ambassadorship";
+"REVOKE_AMBASSDORSHIP_MESSAGE" = "Do you want to revoke your ambassadorship for %@?";
+
+"CONTENT_ERROR_RESPONSE" = "Something went wrong. Please try again.";
+"CONTENT_NOT_FOUND_ALERT" = "Unable to use content";
+"CONTENT_SUCCESSFULLY_CLAIMED" = "Content is now claimed";
+"CONTENT_SUCCESSFULLY_CLAIMED_INFO" = "Do you want to use it now?";
+"CONTENT_HAS_BEEN_USED" = "'%@'\nhas now been used.";
+
+"USE_NOW" = "Use now";
+"SAVE_FOR_LATER" = "Save for later";
+
+"OFFICIAL_HASHTAG" = "Official Hashtag";
+
+"YOU" = "You";
+"NOTIFICATIONS" = "Notifications";
+"NO_NOTIFICATIONS" = "No notifications yet";
+"NOTIFICATION_LIKED" = "%@ liked your recommendation";
+"NOTIFICATION_FOLLOWING" = "%@ is now following you";
+"NOTIFICATION_SAVED_RECOMMENDATION" = "%@ saved your personal recommendation";
+"NOTIFICATION_SHARED_RECOMMENDATION" = "%@ shared your personal recommendation";
+
+"NOTIFICATION_USED_CONTENT" = "%@ used your content";
+"NOTIFICATION_NEW_CONTENT_BRAND" = "There is new content available from %@";
+"NOTIFICATION_NEW_CONTENT_AMBASSADOR" = "%@ did send you content";
+"NOTIFICATION_REMOVED_AMBASSADORSHIP" = "Your ambassadorship for %@ has been canceled";
+"NOTIFICATION_NEW_AMBASSADORSHIP" = "You are now an ambassador for %@";
+
+"DISCLAIMER" = "Disclaimer";
+"BRAND_CONTENT_DISCLAIMER_TEXT" = "The brand/sender reserves against possible, end sales, changes, typographical errors in this content. The brand/sender reserves for possible local price differences. The brand/sender reserves the right without notice to change the content, offer, recommendation. iList inc is not responsible for any content. All liability is regulated by the iList Ambassador user agreement.";
+
+
+"OUTBOUND_SHARE_TEXT" = "Here you are! The link to your content in iList Ambassador.";
+"NO_FOLLOWING_TEXT" = "You are not following anyone right now but if you click on the ambassador tab you can easily do so and create a feed here based on recommendations from the people you follow.";
+
+"NO_CONTENT_AVAILABLE" = "No content available at the moment";

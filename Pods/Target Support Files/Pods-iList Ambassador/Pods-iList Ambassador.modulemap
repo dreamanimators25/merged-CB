@@ -1,0 +1,6 @@
+framework module Pods_iList_Ambassador {
+  umbrella header "Pods-iList Ambassador-umbrella.h"
+
+  export *
+  module * { export * }
+}

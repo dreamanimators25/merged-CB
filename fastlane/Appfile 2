@@ -1,0 +1,9 @@
+#app_identifier "se.ilist.iList" # The bundle identifier of your app
+app_identifier ENV["APP_IDENTIFIER"] 
+
+apple_id "pontus.andersson@appshack.se" # Your Apple email address
+
+team_id "D5WZGXXYX2"  # Developer Portal Team ID
+
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# More information: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md

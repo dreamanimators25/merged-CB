@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentViewController" customModule="iList_Ambassador" customModuleProvider="target">
+            <connections>
+                <outlet property="arrowsIndicatorView" destination="INp-b2-krq" id="ieG-fW-0Yx"/>
+                <outlet property="backgroundImageView" destination="b0o-Sw-gHo" id="tMS-l3-BuO"/>
+                <outlet property="brandImageView" destination="See-x0-pBS" id="CBQ-5Q-cO3"/>
+                <outlet property="collectionView" destination="Wrf-yR-zOH" id="j0B-we-6Vt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="b0o-Sw-gHo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Wrf-yR-zOH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Ty-cW-C4H" customClass="ContentCollectionViewFlowLayout" customModule="iList_Ambassador" customModuleProvider="target">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="XaQ-ca-GSC"/>
+                        <outlet property="delegate" destination="-1" id="eS3-gS-xWd"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INp-b2-krq" customClass="ArrowsIndicatorView" customModule="iList_Ambassador" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="See-x0-pBS" customClass="ProfilePictureImageView" customModule="iList_Ambassador" customModuleProvider="target">
+                    <rect key="frame" x="293" y="32" width="50" height="50"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Yvr-wl-sy7"/>
+                        <constraint firstAttribute="width" constant="50" id="o8G-BK-zKf"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Yvn-Ex-0bB" appends="YES" id="3fW-fq-425"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="b0o-Sw-gHo" secondAttribute="trailing" id="0sA-Ac-shj"/>
+                <constraint firstItem="b0o-Sw-gHo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7Di-LR-J9W"/>
+                <constraint firstItem="b0o-Sw-gHo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7hZ-5Q-eRI"/>
+                <constraint firstAttribute="trailing" secondItem="Wrf-yR-zOH" secondAttribute="trailing" id="BaI-Lw-iYA"/>
+                <constraint firstItem="INp-b2-krq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EYU-ag-Mo1"/>
+                <constraint firstAttribute="trailing" secondItem="INp-b2-krq" secondAttribute="trailing" id="HVz-Tw-fxW"/>
+                <constraint firstAttribute="trailing" secondItem="See-x0-pBS" secondAttribute="trailing" constant="32" id="Qm1-tt-QJZ"/>
+                <constraint firstAttribute="bottom" secondItem="Wrf-yR-zOH" secondAttribute="bottom" id="fqo-iY-r64"/>
+                <constraint firstItem="See-x0-pBS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="g5S-4T-mbR"/>
+                <constraint firstItem="INp-b2-krq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m3G-4Y-ZRl"/>
+                <constraint firstItem="Wrf-yR-zOH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="m3I-o5-p24"/>
+                <constraint firstAttribute="bottom" secondItem="INp-b2-krq" secondAttribute="bottom" id="oBA-hi-1ge"/>
+                <constraint firstItem="Wrf-yR-zOH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tit-WH-7iB"/>
+                <constraint firstAttribute="bottom" secondItem="b0o-Sw-gHo" secondAttribute="bottom" id="z7C-oK-pjc"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+        <tapGestureRecognizer id="Yvn-Ex-0bB">
+            <connections>
+                <action selector="brandImageViewTapped:" destination="-1" id="qhO-4o-3KQ"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="background.jpg" width="1242" height="2208"/>
+    </resources>
+</document>
