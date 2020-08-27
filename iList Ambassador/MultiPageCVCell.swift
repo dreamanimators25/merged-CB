@@ -40,6 +40,7 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
     @IBOutlet weak var upButton: UIButton!
     
     var delegate: MultiPageDelegate?
+    var closeCell = true
     
     static var currPage = 0
     
@@ -103,7 +104,7 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code        
+        // Initialization code
         
         linkOpenInWebView = { link in
             DispatchQueue.main.async {
@@ -132,24 +133,25 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
             let component0 = comp?.first
             let component1 = comp?[1]
             
-            
-            let action = self.content?.pages[indexPath.row].consumeAction
-            print(action ?? 0)
-            
+                        
             switch component1?.type {
                 
             case .Image:
                 let imageCVCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentImageCVCell", for: indexPath) as! ContentImageCVCell
-                
-                imageCVCell.component = component1
+                                
+                imageCVCell.component0 = component0
+                imageCVCell.component1 = component1
                 
                 if let backGround = page?.backgrounds {
                     imageCVCell.background = backGround
                 }
                 
-                if let strSticker = content?.pages[indexPath.row].frameUrl {
+                if let strSticker = page?.frameUrl {
                     imageCVCell.stickerURL = strSticker
                 }
+              
+                imageCVCell.content = self.content
+                imageCVCell.pageNo = indexPath.row
                 
                 return imageCVCell
                 
@@ -163,42 +165,51 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
                     textCVCell.background = backGround
                 }
                 
-                if let strSticker = content?.pages[indexPath.row].frameUrl {
+                if let strSticker = page?.frameUrl {
                     textCVCell.stickerURL = strSticker
                 }
-                
+              
                 textCVCell.content = self.content
                 textCVCell.pageNo = indexPath.row
-                
-                
                 
                 return textCVCell
             case .Video:
                 let videoCVCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentVideoCVCell", for: indexPath) as! ContentVideoCVCell
                 
-                videoCVCell.component = component1
+                videoCVCell.component0 = component0
+                videoCVCell.component1 = component1
                 
                 if let backGround = page?.backgrounds {
                     videoCVCell.background = backGround
                 }
                 
-                if let strSticker = content?.pages[indexPath.row].frameUrl {
+                if let strSticker = page?.frameUrl {
                     videoCVCell.stickerURL = strSticker
                 }
+                
+                videoCVCell.content = self.content
+                videoCVCell.pageNo = indexPath.row
                 
                 return videoCVCell
             case .Sound:
                 let soundCVCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentSoundCVCell", for: indexPath) as! ContentSoundCVCell
                 
-                soundCVCell.component = component1
+                soundCVCell.music?.removeFromSuperview()
+                
+                soundCVCell.component0 = component0
+                soundCVCell.component1 = component1
+            
                 
                 if let backGround = page?.backgrounds {
                     soundCVCell.background = backGround
                 }
                 
-                if let strSticker = content?.pages[indexPath.row].frameUrl {
+                if let strSticker = page?.frameUrl {
                     soundCVCell.stickerURL = strSticker
                 }
+              
+                soundCVCell.content = self.content
+                soundCVCell.pageNo = indexPath.row
                 
                 return soundCVCell
             case .Embed:
@@ -207,15 +218,19 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
                     
                     let youtubeCVCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentYoutubeCVCell", for: indexPath) as! ContentYoutubeCVCell
 
-                    youtubeCVCell.component = component1
+                    youtubeCVCell.component0 = component0
+                    youtubeCVCell.component1 = component1
 
                     if let backGround = page?.backgrounds {
                         youtubeCVCell.background = backGround
                     }
 
-                    if let strSticker = content?.pages[indexPath.row].frameUrl {
+                    if let strSticker = page?.frameUrl {
                         youtubeCVCell.stickerURL = strSticker
                     }
+                    
+                    youtubeCVCell.content = self.content
+                    youtubeCVCell.pageNo = indexPath.row
 
                     return youtubeCVCell
                                         
@@ -223,15 +238,19 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
                     
                     let vimeoCVCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentVimeoCVCell", for: indexPath) as! ContentVimeoCVCell
                     
-                    vimeoCVCell.component = component1
+                    vimeoCVCell.component0 = component0
+                    vimeoCVCell.component1 = component1
                     
                     if let backGround = page?.backgrounds {
                         vimeoCVCell.background = backGround
                     }
                     
-                    if let strSticker = content?.pages[indexPath.row].frameUrl {
+                    if let strSticker = page?.frameUrl {
                         vimeoCVCell.stickerURL = strSticker
                     }
+                  
+                    vimeoCVCell.content = self.content
+                    vimeoCVCell.pageNo = indexPath.row
                     
                     return vimeoCVCell
                 }
@@ -245,23 +264,111 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        autoreleasepool {
+            
+            if let cell = cell as? ContentImageCVCell {
+                cell.pauseMedia()
                 
-        if let cell = cell as? ContentSoundCVCell {
-            cell.pauseMedia()
+                if let pause = cell.pauseImageMp3 {
+                    pause()
+                }
+            }
+            
+            if let cell = cell as? ContentTextCVCell {
+                cell.pauseMedia()
+                
+                if let pause = cell.pauseTextMp3 {
+                    pause()
+                }
+            }
+            
+            if let cell = cell as? ContentVideoCVCell {
+                cell.pauseMedia()
+                
+                if let pause = cell.pauseVideoMp3 {
+                    pause()
+                }
+            }
+            
+            if let cell = cell as? ContentSoundCVCell {
+                cell.pauseMedia()
+                
+                if let pause = cell.pauseSoundMp3 {
+                    pause()
+                }
+            }
+            
+            if let cell = cell as? ContentYoutubeCVCell {
+                cell.pauseMedia()
+                
+                if let pause = cell.pauseYoutubeMp3 {
+                    pause()
+                }
+            }
+            
+            if let cell = cell as? ContentVimeoCVCell {
+                cell.pauseMedia()
+                
+                if let pause = cell.pauseVimeoMp3 {
+                    pause()
+                }
+            }
+            
         }
-        
-        if let cell = cell as? ContentVideoCVCell {
-            cell.pauseMedia()
-        }
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         
+        autoreleasepool {
+            
+            guard closeCell else {
+                closeCell = true
+                
+                return
+            }
+            
+            if let cell = cell as? ContentImageCVCell {
+                if let mp3 = self.content?.pages[indexPath.row].BackSoundUrl {
+                    cell.mp3URL = mp3
+                }
+            }
+            
+            if let cell = cell as? ContentTextCVCell {
+                if let mp3 = self.content?.pages[indexPath.row].BackSoundUrl {
+                    cell.mp3URL = mp3
+                }
+            }
+            
+            if let cell = cell as? ContentVideoCVCell {
+                if let mp3 = self.content?.pages[indexPath.row].BackSoundUrl {
+                    cell.mp3URL = mp3
+                }
+            }
+            
+            if let cell = cell as? ContentSoundCVCell {
+                if let mp3 = self.content?.pages[indexPath.row].BackSoundUrl {
+                    cell.mp3URL = mp3
+                }
+            }
+            
+            if let cell = cell as? ContentYoutubeCVCell {
+                if let mp3 = self.content?.pages[indexPath.row].BackSoundUrl {
+                    cell.mp3URL = mp3
+                }
+            }
+            
+            if let cell = cell as? ContentVimeoCVCell {
+                if let mp3 = self.content?.pages[indexPath.row].BackSoundUrl {
+                    cell.mp3URL = mp3
+                }
+            }
+            
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+    
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -370,17 +477,8 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
             case 2:
                 print("2 - link")
                 
-                /*
                 DispatchQueue.main.async {
                     self.delegate?.openLinkInAppInWebView(link: idin)
-                }*/
-                
-                DispatchQueue.main.async {
-                    if #available(iOS 10.0, *) {
-                        UIApplication.shared.open(URL(string : idin)!, options: [:], completionHandler: { (status) in })
-                    } else {
-                        UIApplication.shared.openURL(URL(string : idin)!)
-                    }
                 }
                 
             case 3:
@@ -421,17 +519,8 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
             case 5:
                 print("5 - Document")
                 
-                /*
                 DispatchQueue.main.async {
                     self.delegate?.openLinkInAppInWebView(link: idin)
-                }*/
-                
-                DispatchQueue.main.async {
-                    if #available(iOS 10.0, *) {
-                        UIApplication.shared.open(URL(string : idin)!, options: [:], completionHandler: { (status) in })
-                    } else {
-                        UIApplication.shared.openURL(URL(string : idin)!)
-                    }
                 }
                 
             case 6:
@@ -462,20 +551,8 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
                         
                         self.delegate?.showAlertForIndexOnCell("", message: msg, alertButtonTitles: ["OK"], alertButtonStyles: [.default], vc: UIViewController(), completion: { (index) in
                             
-                            /*
                             DispatchQueue.main.async {
                                 self.delegate?.openLinkInAppInWebView(link: idin)
-                            }*/
-                            
-                            DispatchQueue.main.async {
-                                guard let url = URL(string: idin) else { return }
-                                //UIApplication.shared.open(url) //Sameer 12/5/2020 for crash log
-                                
-                                if #available(iOS 10.0, *) {
-                                    UIApplication.shared.open(url, options: [:], completionHandler: { (status) in })
-                                } else {
-                                    UIApplication.shared.openURL(url)
-                                }
                             }
                             
                         })
@@ -487,7 +564,7 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
                 
             case 10:
                 print("10 - InAppLink")
-                
+
             default:
                 break
             }
@@ -497,6 +574,7 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
     }
     
     //MARK: Custom Methods
+    
     func reset() {
         if let content = content, content.pages.count > 0 {
             multiPageCollectionView.scrollToItem(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
@@ -506,15 +584,63 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
     
     func pauseCells() {
         
-        if let cells = multiPageCollectionView.visibleCells as? [ContentSoundCVCell] {
+        if let cells = multiPageCollectionView.visibleCells as? [ContentImageCVCell] {
             for cell in cells {
                 cell.pauseMedia()
+                
+                if let pause = cell.pauseImageMp3 {
+                    pause()
+                }
+            }
+        }
+        
+        if let cells = multiPageCollectionView.visibleCells as? [ContentTextCVCell] {
+            for cell in cells {
+                cell.pauseMedia()
+                
+                if let pause = cell.pauseTextMp3 {
+                    pause()
+                }
             }
         }
         
         if let cells = multiPageCollectionView.visibleCells as? [ContentVideoCVCell] {
             for cell in cells {
                 cell.pauseMedia()
+                
+                if let pause = cell.pauseVideoMp3 {
+                    pause()
+                }
+            }
+        }
+        
+        if let cells = multiPageCollectionView.visibleCells as? [ContentSoundCVCell] {
+            for cell in cells {
+                cell.pauseMedia()
+                
+                if let pause = cell.pauseSoundMp3 {
+                    pause()
+                }
+            }
+        }
+        
+        if let cells = multiPageCollectionView.visibleCells as? [ContentYoutubeCVCell] {
+            for cell in cells {
+                cell.pauseMedia()
+                
+                if let pause = cell.pauseYoutubeMp3 {
+                    pause()
+                }
+            }
+        }
+        
+        if let cells = multiPageCollectionView.visibleCells as? [ContentVimeoCVCell] {
+            for cell in cells {
+                cell.pauseMedia()
+                
+                if let pause = cell.pauseVimeoMp3 {
+                    pause()
+                }
             }
         }
         
@@ -567,7 +693,8 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
                 // no action button
                 
                 OperationQueue.main.addOperation {
-                    self.goThereBtn.isHidden = true
+                    self.goThereBtn.isHidden = false
+                    self.goThereBtn.setTitle("Use Offer", for: .normal)
                 }
                 
             case 2:
@@ -652,10 +779,23 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
             //New Functionality For GoThereButton
             if let consumeActionComp = content?.pages[page].consumeActionComponent {
                 
-                if let col = consumeActionComp.color {
-                    
-                    OperationQueue.main.addOperation {
-                        self.goThereBtn.setTitleColor(UIColor.init(hexString: col), for: .normal)
+                if let backBox = consumeActionComp.backGroundBox {
+                    if backBox == "true" {
+                        
+                        if let bxCol = consumeActionComp.boxColor {
+                            OperationQueue.main.addOperation {
+                                self.goThereBtn.backgroundColor = UIColor.init(hexString: bxCol)
+                            }
+                        }else {
+                            OperationQueue.main.addOperation {
+                                self.goThereBtn.backgroundColor = UIColor.clear
+                            }
+                        }
+                        
+                    }else {
+                        OperationQueue.main.addOperation {
+                            self.goThereBtn.backgroundColor = UIColor.clear
+                        }
                     }
                 }
                 
@@ -664,31 +804,14 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
                         OperationQueue.main.addOperation {
                             self.goThereBtn.layer.cornerRadius = 10.0
                         }
-                    }
-                }
-                
-                if let backBox = consumeActionComp.backGroundBox {
-                    if backBox == "true" {
-                        OperationQueue.main.addOperation {
-                            
-                        }
                     }else {
                         OperationQueue.main.addOperation {
-                            self.goThereBtn.backgroundColor = UIColor.clear
+                            self.goThereBtn.layer.cornerRadius = 0.0
                         }
                     }
-                }
-                
-                if let txt = consumeActionComp.text {
+                }else {
                     OperationQueue.main.addOperation {
-                        /////self.goThereBtn.titleLabel?.text = txt
-                        self.goThereBtn.setTitle(txt, for: .normal)
-                    }
-                }
-                
-                if let bxCol = consumeActionComp.boxColor {
-                    OperationQueue.main.addOperation {
-                        self.goThereBtn.backgroundColor = UIColor.init(hexString: bxCol)
+                        self.goThereBtn.layer.cornerRadius = 0.0
                     }
                 }
                 
@@ -699,6 +822,18 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
                             
                             self.goThereBtn.backgroundColor = self.goThereBtn.backgroundColor?.withAlphaComponent(opacty)
                         }
+                    }
+                }
+                
+                if let txt = consumeActionComp.text {
+                    OperationQueue.main.addOperation {
+                        self.goThereBtn.setTitle(txt, for: .normal)
+                    }
+                }
+                
+                if let col = consumeActionComp.color {
+                    OperationQueue.main.addOperation {
+                        self.goThereBtn.setTitleColor(UIColor.init(hexString: col), for: .normal)
                     }
                 }
                 
@@ -730,7 +865,6 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
         }
         
     }
-
     
 }
 
@@ -750,7 +884,7 @@ extension MultiPageCVCell : UIScrollViewDelegate {
         
         var scrollOffset = scrollView.contentOffset.y
         let contentHeight = multiPageCollectionView.contentSize.height - multiPageCollectionView.frame.size.height
-        var indexPath:IndexPath?
+        var indexPath : IndexPath?
         if scrollOffset < 0 {
             indexPath = IndexPath(row: 0, section: 0)
         } else if scrollOffset > contentHeight {

@@ -43,7 +43,8 @@ class ContentText: UITextView, ContentView {
         self.font = meta.font
         self.color = meta.color
         self.textAlignment = meta.textAlignment
-        self.alpa = meta.background_opacity
+        //self.alpa = meta.background_opacity
+        self.alpa = meta.bgBoxOpacity
                 
         
         //self.goThereBtn.backgroundColor = self.goThereBtn.backgroundColor?.withAlphaComponent(opacty)
@@ -88,7 +89,7 @@ class ContentText: UITextView, ContentView {
                     //self.bottomMarginPercent = 45
                     print("Meta Text is :- \(meta.text)")
                     
-                    self.backColor = meta.bgColor
+                    self.backColor = meta.bgBoxColor
                     
                 }
                 
@@ -126,7 +127,7 @@ class ContentText: UITextView, ContentView {
                     
                     print("Meta Text is :- \(meta.text)")
                     //self.bottomMarginPercent = bottomMarginPercent + 20
-                    self.backColor = meta.bgColor
+                    self.backColor = meta.bgBoxColor
                                         
                 }
             }
@@ -149,7 +150,7 @@ class ContentText: UITextView, ContentView {
                 
                 print("Meta Text is :- \(meta.text)")
             }else {
-                self.backColor = meta.bgColor
+                self.backColor = meta.bgBoxColor
                 
                 //self.bottomMarginPercent = 45
                 self.bottomMarginPercent = bottomMarginPercent + 10

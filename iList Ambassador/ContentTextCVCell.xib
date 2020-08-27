@@ -25,17 +25,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeU-kI-WGx">
-                        <rect key="frame" x="150" y="40" width="0.0" height="0.0"/>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeU-kI-WGx">
+                        <rect key="frame" x="30" y="40" width="240" height="20"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="5"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9g-7W-Pzt">
                         <rect key="frame" x="30" y="250" width="240" height="0.0"/>
@@ -45,10 +40,18 @@
                         <nil key="highlightedColor"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="5"/>
+                                <real key="value" value="0.0"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1yF-bq-dFd">
+                        <rect key="frame" x="145" y="232" width="10" height="36.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                    </textView>
                 </subviews>
             </view>
             <constraints>
@@ -57,20 +60,27 @@
                 <constraint firstItem="ETw-Ka-WU2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7ga-P4-Va7"/>
                 <constraint firstItem="ggu-w7-G1W" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7oo-tc-VQb"/>
                 <constraint firstItem="SeU-kI-WGx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="Act-M7-vmE"/>
-                <constraint firstItem="SeU-kI-WGx" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Cw9-g1-wmM"/>
                 <constraint firstItem="g9g-7W-Pzt" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Eh0-mO-P7x"/>
+                <constraint firstItem="1yF-bq-dFd" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="FKY-Hf-K4q"/>
                 <constraint firstItem="g9g-7W-Pzt" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Iyc-rJ-XRc"/>
-                <constraint firstAttribute="trailing" secondItem="g9g-7W-Pzt" secondAttribute="trailing" constant="30" id="Kkw-Kf-CYW"/>
+                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="g9g-7W-Pzt" secondAttribute="trailing" constant="30" id="Kkw-Kf-CYW"/>
+                <constraint firstItem="1yF-bq-dFd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="LOA-7G-yLK"/>
                 <constraint firstAttribute="trailing" secondItem="ETw-Ka-WU2" secondAttribute="trailing" id="Pmg-UE-dzu"/>
                 <constraint firstAttribute="bottom" secondItem="ETw-Ka-WU2" secondAttribute="bottom" id="Qrp-pn-fiJ"/>
-                <constraint firstItem="g9g-7W-Pzt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="Rq3-bd-M7Z"/>
+                <constraint firstItem="g9g-7W-Pzt" firstAttribute="leading" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="Rq3-bd-M7Z"/>
+                <constraint firstItem="1yF-bq-dFd" firstAttribute="height" relation="lessThanOrEqual" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.5" id="Syp-je-OWz"/>
+                <constraint firstItem="SeU-kI-WGx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="cJi-jO-h9K"/>
+                <constraint firstItem="1yF-bq-dFd" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="d8Q-F3-OFr"/>
+                <constraint firstItem="g9g-7W-Pzt" firstAttribute="height" relation="lessThanOrEqual" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.5" id="fOf-rA-cUG"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1yF-bq-dFd" secondAttribute="trailing" constant="30" id="rXy-DP-d7R"/>
                 <constraint firstAttribute="trailing" secondItem="ggu-w7-G1W" secondAttribute="trailing" id="seF-Fo-fxg"/>
+                <constraint firstAttribute="trailing" secondItem="SeU-kI-WGx" secondAttribute="trailing" constant="30" id="td3-6J-EJ2"/>
                 <constraint firstItem="ggu-w7-G1W" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wkC-ce-SRO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
                 <outlet property="backgroundImageView" destination="ETw-Ka-WU2" id="SOh-1F-cH3"/>
-                <outlet property="contentTextLbl" destination="g9g-7W-Pzt" id="nRQ-k0-Y0J"/>
+                <outlet property="contentTextView" destination="1yF-bq-dFd" id="9tg-l0-DRt"/>
                 <outlet property="headerTextLbl" destination="SeU-kI-WGx" id="dF3-Pz-wtP"/>
                 <outlet property="pageBackgroundView" destination="ggu-w7-G1W" id="k0e-HM-0ld"/>
             </connections>

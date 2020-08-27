@@ -472,6 +472,7 @@ class ContentSetupViewController: UIViewController {
         
         for cell in cells {
             if let cell = cell as? MultiPageCVCell {
+                cell.closeCell = false
                 cell.reset()
             }
         }
@@ -537,7 +538,7 @@ class ContentSetupViewController: UIViewController {
                     
                     self.setupStatistics(contents)
                     self.handleContentButtons()
-                    self.contentCollectionView.reloadData()
+                    //self.contentCollectionView.reloadData()
                     
                     self.shareButtons(self.contentCollectionView.currentHorizontalPage(), 0)
                 })
@@ -712,11 +713,21 @@ extension ContentSetupViewController: UICollectionViewDataSource, UICollectionVi
         
         let multiPageCVCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MultiPageCVCell", for: indexPath) as! MultiPageCVCell
         
-        let content = contents?[indexPath.row]
-        multiPageCVCell.content = content
-        multiPageCVCell.delegate = self
+        //let content = contents?[indexPath.row]
+        //multiPageCVCell.content = content
+        //multiPageCVCell.delegate = self
         
         return multiPageCVCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        if let cell = cell as? MultiPageCVCell {
+            let content = contents?[indexPath.row]
+            cell.content = content
+            cell.delegate = self
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
@@ -861,6 +872,18 @@ extension ContentSetupViewController: MultiPageDelegate {
 extension ContentSetupViewController : UIScrollViewDelegate {
     
     // MARK: - UIScrollViewDelegate
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        selectedRaw = nil
+        selectedSection = nil
+        
+        if let cells = self.contentCollectionView.visibleCells as? [MultiPageCVCell] {
+            for cell in cells {
+                cell.reset()
+            }
+        }
+        
+    }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         var scrollOffset = scrollView.contentOffset.x

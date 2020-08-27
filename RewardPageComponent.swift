@@ -138,7 +138,9 @@ open class RewardPageComponent {
                     break
                 }
             }
-            self.meta = Meta(font: font, size: fontSize, color: color,bgColor: BGColor, bgOpacity: opacty, bgBox: BGBoxBool, text: text, height: height, width: width, textAlignment: textAlignment)
+            self.meta = Meta(font: font, color: color, bgColor: BGColor, bgOpacity: opacty, bgBox: BGBoxBool, text: text, height: height, width: width, textAlignment: textAlignment, backRound: "")
+            
+            //self.meta = Meta(font: font, size: fontSize, color: color,bgColor: BGColor, bgOpacity: opacty, bgBox: BGBoxBool, text: text, height: height, width: width, textAlignment: textAlignment)
         }
         
         if let order = dictionary[kAPIKeyOrder] as? Int {

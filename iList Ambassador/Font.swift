@@ -21,8 +21,9 @@ class Font {
     
     class func normalFont(_ size: CGFloat) -> UIFont { return UIFont(name: "Helvetica", size: size)! }
     class func boldFont(_ size: CGFloat) -> UIFont { return UIFont(name: "Helvetica-Bold", size: size)! }
+    class func italicFont(_ size: CGFloat) -> UIFont { return UIFont(name: "Helvetica-Oblique", size: size)! }
+    class func boldItalicFont(_ size: CGFloat) -> UIFont { return UIFont(name: "Helvetica-BoldOblique", size: size)! }
     
-    class func italicFont(_ size: CGFloat) -> UIFont { return UIFont(name: "Helvetica-LightOblique", size: size)! }
     
     class func titleFont(_ size: CGFloat) -> UIFont { return UIFont(name: "MyriadPro-BoldSemiCn", size: size)! }
     class func semiTitleFont(_ size: CGFloat) -> UIFont { return UIFont(name: "MyriadPro-SemiboldSemiCn", size: size)! }

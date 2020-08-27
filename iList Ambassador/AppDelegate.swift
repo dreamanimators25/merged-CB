@@ -19,6 +19,8 @@ import UserNotifications
 let newBaseURL = "http://40.112.131.121:5000/api/" //Test Server Url
 let apdel = UIApplication.shared.delegate
 
+let contentCornerRadius = CGFloat(5.0)
+
 var isComeFromPush = false
 var contentIdPush = 0
 var channelIdPush = 0

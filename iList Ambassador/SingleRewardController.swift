@@ -134,6 +134,7 @@ class SingleRewardController: UIViewController {
         }
     }
     
+    /*
     private func setupBody() {
         for x in (singleRewardMetaData?.pages[0].components)! {
             switch x.type.rawValue {
@@ -153,7 +154,7 @@ class SingleRewardController: UIViewController {
                 return
             }
         }
-    }
+    }*/
     
     private func setupBackground() {
         let backgroundData = singleRewardMetaData?.pages[0].background
@@ -212,6 +213,7 @@ class SingleRewardController: UIViewController {
     }
     
     private func setupComponents() {
+        /*
         if (singleRewardMetaData?.pages[0].components.count)! > 0 {
             let components = singleRewardMetaData?.pages[0].components[0]
             if (components?.meta?.size) != nil {
@@ -224,7 +226,7 @@ class SingleRewardController: UIViewController {
             }
             setupBody()
             setupTitle()
-        }
+        }*/
     }
     
     private func setupTitle() {

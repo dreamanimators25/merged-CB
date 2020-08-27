@@ -25,11 +25,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOk-7o-JrX">
+                        <rect key="frame" x="30" y="40" width="240" height="0.0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="Uw7-dm-w4s" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="15y-bJ-t1K"/>
                 <constraint firstAttribute="bottom" secondItem="h2k-g6-73f" secondAttribute="bottom" id="8jL-gA-5qA"/>
+                <constraint firstAttribute="trailing" secondItem="QOk-7o-JrX" secondAttribute="trailing" constant="30" id="9mA-5M-QtF"/>
+                <constraint firstItem="QOk-7o-JrX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="CeA-BX-oBf"/>
+                <constraint firstItem="QOk-7o-JrX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="JpZ-a4-Qtl"/>
                 <constraint firstItem="h2k-g6-73f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N6F-zB-4Fb"/>
                 <constraint firstAttribute="trailing" secondItem="Uw7-dm-w4s" secondAttribute="trailing" id="ZSu-bY-eZU"/>
                 <constraint firstAttribute="bottom" secondItem="Uw7-dm-w4s" secondAttribute="bottom" id="eEC-Yg-maI"/>
@@ -40,6 +55,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
                 <outlet property="backgroundImageView" destination="h2k-g6-73f" id="Bsq-BH-vPK"/>
+                <outlet property="headerTextLbl" destination="QOk-7o-JrX" id="TbY-BN-qg7"/>
                 <outlet property="pageBackgroundView" destination="Uw7-dm-w4s" id="v0A-Ia-8SX"/>
             </connections>
             <point key="canvasLocation" x="139" y="92"/>
