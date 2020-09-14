@@ -72,12 +72,12 @@ class ContentYoutubeCVCell: UICollectionViewCell {
             let meta0 = component0?.meta
             
             //HEADER TEXT
-            //self.headerTextLbl?.text = meta0?.text ?? ""
-            self.headerTextLbl?.text = " \(meta0?.text ?? "") "
+            self.headerTextLbl?.text = " \(meta0?.text ?? "") ".capitalized
+            
+            /*
             self.headerTextLbl?.font = meta0?.font
             self.headerTextLbl?.textColor = meta0?.color
             self.headerTextLbl?.textAlignment = meta0?.textAlignment ?? NSTextAlignment.center
-            
          
             if let bgBox = meta0?.background_box, bgBox == "true" {
                 if let alpa = meta0?.bgBoxOpacity, alpa != 0.0 {
@@ -94,12 +94,13 @@ class ContentYoutubeCVCell: UICollectionViewCell {
             }else {
                 self.headerTextLbl?.backgroundColor = .clear
             }
-            
+            */
         }
     }
     
     var component1 : ContentPageComponent? {
         didSet {
+            /*
             if let url = component1?.youtubeUrl {
                 let split = url.split(separator: "/")
                 
@@ -108,6 +109,7 @@ class ContentYoutubeCVCell: UICollectionViewCell {
                     videoPlayer.loadVideoID(id)
                 }
             }
+            */
         }
     }
     
@@ -225,6 +227,11 @@ class ContentYoutubeCVCell: UICollectionViewCell {
                 component.reset()
             }
         }
+    }
+    
+    //MARK: IBActions
+    @IBAction func readMoreButtonPressed(_ sender: UIButton) {
+        print("Hello")
     }
 
 }

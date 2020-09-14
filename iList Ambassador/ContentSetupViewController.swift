@@ -26,6 +26,9 @@ var loadCollectionView : ((_ index:IndexPath)-> (Void))?
 
 class ContentSetupViewController: UIViewController {
     
+    @IBOutlet weak var channelImgView: UIImageView!
+    @IBOutlet weak var channelNameLbl: UILabel!
+    
     static var ambassadorId: Int?
     
     // MARK: Data
@@ -147,12 +150,24 @@ class ContentSetupViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        if UIDevice.current.screenType != UIDevice.ScreenType.iPhoneX {
-//            topConstraint.constant = -20
-//        }
+        
+        
+        self.channelNameLbl.text = self.ambassadorship?.brand.name ?? ""
+        
+        if let file = self.ambassadorship?.brand.logotypeUrl {
+            if let url = URL(string: file) {
+                channelImgView.af_setImage(withURL: url)
+            }
+        }
+        
+        
+        
+        //        if UIDevice.current.screenType != UIDevice.ScreenType.iPhoneX {
+        //            topConstraint.constant = -20
+        //        }
         
         //exitBrandButton.backgroundColor = .red
-    
+        
         loadVimeoPlayer = { vimURL in
             self.showVimeoPlayer(vimURL)
         }
@@ -391,7 +406,6 @@ class ContentSetupViewController: UIViewController {
     }
 
     // MARK: Actions
-    
     func showAlertOnCell(_ title: String, _ message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
@@ -421,7 +435,6 @@ class ContentSetupViewController: UIViewController {
         present(alert, animated: true, completion: nil)
         
         //UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
-
     }
     
     func presentUseAlert(_ title: String, _ message: String) {
@@ -451,7 +464,6 @@ class ContentSetupViewController: UIViewController {
         alert.addAction(cancel)
         present(alert, animated: true)
     }
-    
     
     @IBAction func exitBrand(_ sender: BrandButton) {
         closeBrand()
@@ -668,7 +680,7 @@ class ContentSetupViewController: UIViewController {
     }
 }
 
-extension ContentSetupViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension ContentSetupViewController: UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if useContent == 0 {
@@ -743,9 +755,45 @@ extension ContentSetupViewController: UICollectionViewDataSource, UICollectionVi
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize.init(width: self.contentCollectionView.bounds.width, height: self.contentCollectionView.bounds.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
 }
 
 extension ContentSetupViewController: MultiPageDelegate {
+    
+    func showPageContentData(header: ContentPageComponent, body: ContentPageComponent, background: ContentPageBackground, currPage currpage: Int,cont:Content) {
+        
+        let cells = contentCollectionView.visibleCells
+        for cell in cells {
+            if let cell = cell as? MultiPageCVCell {
+                //cell.reset()
+                cell.pauseCells()
+            }
+        }
+        
+        let vc = UIStoryboard(name: "Content", bundle: nil).instantiateViewController(withIdentifier: "ShowContentVC") as! ShowContentVC
+        vc.content = cont
+        vc.currentPage = currpage
+        vc.component0 = header
+        vc.component1 = body
+        vc.background = background
+        vc.delegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     func openLinkInAppInWebView(link: String) {
     

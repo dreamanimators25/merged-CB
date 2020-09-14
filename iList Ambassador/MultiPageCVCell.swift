@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 protocol MultiPageDelegate {
     func currentSubPage(_ page: Int)
@@ -28,6 +30,8 @@ protocol MultiPageDelegate {
     
     func openLinkInAppInWebView(link: String)
     func openEmailLink(link: String)
+    func showPageContentData(header:ContentPageComponent, body:ContentPageComponent, background: ContentPageBackground,currPage:Int,cont:Content)
+    
 }
 
 var linkOpenInWebView : ((_ url:String)-> (Void))?
@@ -38,6 +42,7 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
     @IBOutlet weak var goThereBtn: UIButton!
     @IBOutlet weak var downButton: BounchingButton!
     @IBOutlet weak var upButton: UIButton!
+
     
     var delegate: MultiPageDelegate?
     var closeCell = true
@@ -101,7 +106,7 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
             
         }
     }
-    
+        
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -443,6 +448,7 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
         
         print("testTap = \(currentPage)")
         
+        /*
         if let idin = content?.pages[currentPage].identity, let action = content?.pages[currentPage].consumeAction {
             
             print("--- IDIN --- \(idin) ----- ACTION ----- \(action)")
@@ -569,6 +575,19 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
                 break
             }
             
+        }*/
+        
+        
+        DispatchQueue.main.async {
+            //self.delegate?.openLinkInAppInWebView(link: idin)
+            
+            let page = self.content?.pages[self.currentPage]
+            let comp = page?.components
+            
+            let component0 = comp?.first
+            let component1 = comp?[1]
+            
+            self.delegate?.showPageContentData(header: component0 ?? ContentPageComponent.init(dictionary: [:]), body: component1 ?? ContentPageComponent.init(dictionary: [:]), background: page?.backgrounds ?? ContentPageBackground.init(dictionary: [:]), currPage: self.currentPage,cont: self.content ?? Content.init(dictionary: [:]))
         }
         
     }
@@ -802,16 +821,16 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
                 if let rounBox = consumeActionComp.roundedBox {
                     if rounBox == "true" {
                         OperationQueue.main.addOperation {
-                            self.goThereBtn.layer.cornerRadius = 10.0
+                            //self.goThereBtn.layer.cornerRadius = 10.0
                         }
                     }else {
                         OperationQueue.main.addOperation {
-                            self.goThereBtn.layer.cornerRadius = 0.0
+                            //self.goThereBtn.layer.cornerRadius = 0.0
                         }
                     }
                 }else {
                     OperationQueue.main.addOperation {
-                        self.goThereBtn.layer.cornerRadius = 0.0
+                        //self.goThereBtn.layer.cornerRadius = 0.0
                     }
                 }
                 
@@ -847,6 +866,10 @@ class MultiPageCVCell: UICollectionViewCell, UICollectionViewDataSource, UIColle
                     }
                 }
 
+            }
+            
+            OperationQueue.main.addOperation {
+                self.goThereBtn.layer.cornerRadius = 20.0
             }
             
         } else {

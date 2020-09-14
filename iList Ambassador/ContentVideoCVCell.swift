@@ -69,12 +69,12 @@ class ContentVideoCVCell: UICollectionViewCell {
             let meta0 = component0?.meta
             
             //HEADER TEXT
-            //self.headerTextLbl?.text = meta0?.text ?? ""
-            self.headerTextLbl?.text = " \(meta0?.text ?? "") "
+            self.headerTextLbl?.text = " \(meta0?.text ?? "") ".capitalized
+            
+            /*
             self.headerTextLbl?.font = meta0?.font
             self.headerTextLbl?.textColor = meta0?.color
             self.headerTextLbl?.textAlignment = meta0?.textAlignment ?? NSTextAlignment.center
-            
          
             if let bgBox = meta0?.background_box, bgBox == "true" {
                 if let alpa = meta0?.bgBoxOpacity, alpa != 0.0 {
@@ -91,7 +91,7 @@ class ContentVideoCVCell: UICollectionViewCell {
             }else {
                 self.headerTextLbl?.backgroundColor = .clear
             }
-            
+            */
         }
     }
     
@@ -222,6 +222,11 @@ class ContentVideoCVCell: UICollectionViewCell {
                 component.reset()
             }
         }
+    }
+    
+    //MARK: IBActions
+    @IBAction func readMoreButtonPressed(_ sender: UIButton) {
+        print("Hello")
     }
 
 }

@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContentTextCVCell" id="gTV-IL-0wX" customClass="ContentTextCVCell" customModule="AppIn" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContentTextCVCell" id="gTV-IL-0wX" customClass="ContentTextCVCell" customModule="iList_Ambassador" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -25,14 +25,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeU-kI-WGx">
-                        <rect key="frame" x="30" y="40" width="240" height="20"/>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeU-kI-WGx">
+                        <rect key="frame" x="20" y="405" width="260" height="0.0"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9g-7W-Pzt">
+                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9g-7W-Pzt">
                         <rect key="frame" x="30" y="250" width="240" height="0.0"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -44,7 +44,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1yF-bq-dFd">
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1yF-bq-dFd">
                         <rect key="frame" x="145" y="232" width="10" height="36.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -52,14 +52,35 @@
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                     </textView>
+                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2J6-B8-sM6">
+                        <rect key="frame" x="20" y="415" width="260" height="50"/>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.2666666667" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="wzf-k1-0QV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <state key="normal" title="Read more">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="readMoreButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="mj7-9t-S3Y"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="ETw-Ka-WU2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="015-K9-F6c"/>
+                <constraint firstItem="2J6-B8-sM6" firstAttribute="top" secondItem="SeU-kI-WGx" secondAttribute="bottom" constant="10" id="37h-Co-kpl"/>
                 <constraint firstAttribute="bottom" secondItem="ggu-w7-G1W" secondAttribute="bottom" id="4wR-TC-GBw"/>
                 <constraint firstItem="ETw-Ka-WU2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7ga-P4-Va7"/>
                 <constraint firstItem="ggu-w7-G1W" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7oo-tc-VQb"/>
-                <constraint firstItem="SeU-kI-WGx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="Act-M7-vmE"/>
+                <constraint firstItem="2J6-B8-sM6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="7yI-TD-XfS"/>
+                <constraint firstAttribute="trailing" secondItem="2J6-B8-sM6" secondAttribute="trailing" constant="20" id="8ij-HD-lGr"/>
                 <constraint firstItem="g9g-7W-Pzt" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Eh0-mO-P7x"/>
                 <constraint firstItem="1yF-bq-dFd" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="FKY-Hf-K4q"/>
                 <constraint firstItem="g9g-7W-Pzt" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Iyc-rJ-XRc"/>
@@ -67,14 +88,15 @@
                 <constraint firstItem="1yF-bq-dFd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="LOA-7G-yLK"/>
                 <constraint firstAttribute="trailing" secondItem="ETw-Ka-WU2" secondAttribute="trailing" id="Pmg-UE-dzu"/>
                 <constraint firstAttribute="bottom" secondItem="ETw-Ka-WU2" secondAttribute="bottom" id="Qrp-pn-fiJ"/>
+                <constraint firstAttribute="bottom" secondItem="2J6-B8-sM6" secondAttribute="bottom" constant="35" id="Qvz-cF-auF"/>
                 <constraint firstItem="g9g-7W-Pzt" firstAttribute="leading" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="Rq3-bd-M7Z"/>
                 <constraint firstItem="1yF-bq-dFd" firstAttribute="height" relation="lessThanOrEqual" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.5" id="Syp-je-OWz"/>
-                <constraint firstItem="SeU-kI-WGx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="cJi-jO-h9K"/>
+                <constraint firstItem="SeU-kI-WGx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="cJi-jO-h9K"/>
                 <constraint firstItem="1yF-bq-dFd" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="d8Q-F3-OFr"/>
                 <constraint firstItem="g9g-7W-Pzt" firstAttribute="height" relation="lessThanOrEqual" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.5" id="fOf-rA-cUG"/>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1yF-bq-dFd" secondAttribute="trailing" constant="30" id="rXy-DP-d7R"/>
                 <constraint firstAttribute="trailing" secondItem="ggu-w7-G1W" secondAttribute="trailing" id="seF-Fo-fxg"/>
-                <constraint firstAttribute="trailing" secondItem="SeU-kI-WGx" secondAttribute="trailing" constant="30" id="td3-6J-EJ2"/>
+                <constraint firstAttribute="trailing" secondItem="SeU-kI-WGx" secondAttribute="trailing" constant="20" id="td3-6J-EJ2"/>
                 <constraint firstItem="ggu-w7-G1W" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wkC-ce-SRO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>

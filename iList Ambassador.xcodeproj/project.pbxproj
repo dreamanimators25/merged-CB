@@ -112,6 +112,8 @@
 		23ABDFA51DDEEB9800368F3D /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ABDFA41DDEEB9800368F3D /* JSON.swift */; };
 		23B0A4121DDEE29400164D06 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B0A4111DDEE29400164D06 /* Keychain.swift */; };
 		5221E4762392964700C13C07 /* GroupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221E4752392964600C13C07 /* GroupList.swift */; };
+		591540CE2508B37E00203233 /* ShowContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591540CD2508B37E00203233 /* ShowContentVC.swift */; };
+		591AEEBD250A655600C1E281 /* dummyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591AEEBC250A655600C1E281 /* dummyVC.swift */; };
 		5984FACD24E7E3DF00B0F47F /* ContentVideoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5984FAC124E7E3DD00B0F47F /* ContentVideoCVCell.swift */; };
 		5984FACE24E7E3DF00B0F47F /* ContentYoutubeCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5984FAC224E7E3DD00B0F47F /* ContentYoutubeCVCell.swift */; };
 		5984FACF24E7E3DF00B0F47F /* ContentTextCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5984FAC324E7E3DD00B0F47F /* ContentTextCVCell.xib */; };
@@ -539,6 +541,8 @@
 		23B0A4111DDEE29400164D06 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		361FC9386C4DB83A2EB87DED /* Pods-iList Ambassador Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iList Ambassador Dev.release.xcconfig"; path = "Target Support Files/Pods-iList Ambassador Dev/Pods-iList Ambassador Dev.release.xcconfig"; sourceTree = "<group>"; };
 		5221E4752392964600C13C07 /* GroupList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupList.swift; sourceTree = "<group>"; };
+		591540CD2508B37E00203233 /* ShowContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowContentVC.swift; sourceTree = "<group>"; };
+		591AEEBC250A655600C1E281 /* dummyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummyVC.swift; sourceTree = "<group>"; };
 		5984FAC124E7E3DD00B0F47F /* ContentVideoCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentVideoCVCell.swift; sourceTree = "<group>"; };
 		5984FAC224E7E3DD00B0F47F /* ContentYoutubeCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentYoutubeCVCell.swift; sourceTree = "<group>"; };
 		5984FAC324E7E3DD00B0F47F /* ContentTextCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentTextCVCell.xib; sourceTree = "<group>"; };
@@ -800,6 +804,8 @@
 			children = (
 				EE36CACD1D3FA20A006AFCA3 /* Content.storyboard */,
 				EE36CAD31D3FB233006AFCA3 /* ContentSetupViewController.swift */,
+				591540CD2508B37E00203233 /* ShowContentVC.swift */,
+				591AEEBC250A655600C1E281 /* dummyVC.swift */,
 				EE485EFB1D5CA84800286E7C /* ShareContentViewController.swift */,
 				16EF51131E62E17300C39C39 /* OutboundShareManager.swift */,
 				16DD39D81D153C2800FF2840 /* WebViewController.swift */,
@@ -1465,8 +1471,9 @@
 				TargetAttributes = {
 					16CD9FBA1C8C246100A5B455 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = N84N5G984T;
 						LastSwiftMigration = 0810;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1898,6 +1905,7 @@
 				16D79F851CC2192200B65081 /* TextField.swift in Sources */,
 				16E1945D1CB8F409001BCC00 /* Label.swift in Sources */,
 				EE36CADF1D3FBAC9006AFCA3 /* SinglePage.swift in Sources */,
+				591AEEBD250A655600C1E281 /* dummyVC.swift in Sources */,
 				EED943741CE7372B00D01C47 /* LoginAndRegisterViewController.swift in Sources */,
 				DA045B4E223523A600B80ABC /* FriendsTableViewCell.swift in Sources */,
 				160EF5FB1CAFD7A200F01C83 /* ContentRouter.swift in Sources */,
@@ -1963,6 +1971,7 @@
 				EE04BEAC1D4B77370052B193 /* CircularProgress.swift in Sources */,
 				16CD9FD41C8C26B000A5B455 /* ProfilePictureImageView.swift in Sources */,
 				AB4488571F49C68B0042DF75 /* SettingsCell.swift in Sources */,
+				591540CE2508B37E00203233 /* ShowContentVC.swift in Sources */,
 				1624B6A41CC7D1070012B141 /* SearchBar.swift in Sources */,
 				DA2E69E522380C3D007AC842 /* NearbyViewController.swift in Sources */,
 				5984FAD424E7E3DF00B0F47F /* ContentSoundCVCell.swift in Sources */,
@@ -2331,12 +2340,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "iList Ambassador/iList Ambassador.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.30;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N84N5G984T;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2349,7 +2358,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 4.0.6;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = se.ilist.iList;
+				PRODUCT_BUNDLE_IDENTIFIER = se.ilist.iLis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2364,12 +2373,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "iList Ambassador/iList Ambassador.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.30;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N84N5G984T;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2382,7 +2391,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 4.0.6;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = se.ilist.iList;
+				PRODUCT_BUNDLE_IDENTIFIER = se.ilist.iLis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

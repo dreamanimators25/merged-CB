@@ -46,6 +46,7 @@ class ContentImageCVCell: UICollectionViewCell {
             
             if (content != nil) {
                 OperationQueue.main.addOperation {
+                    
                     self.inAppLinkBaseView.removeFromSuperview()
                     self.contentView.superview?.willRemoveSubview(self.inAppLinkBaseView)
                     
@@ -69,12 +70,12 @@ class ContentImageCVCell: UICollectionViewCell {
             let meta0 = component0?.meta
             
             //HEADER TEXT
-            //self.headerTextLbl?.text = meta0?.text ?? ""
-            self.headerTextLbl?.text = " \(meta0?.text ?? "") "
+            self.headerTextLbl?.text = " \(meta0?.text ?? "") ".capitalized
+            
+            /*
             self.headerTextLbl?.font = meta0?.font
             self.headerTextLbl?.textColor = meta0?.color
             self.headerTextLbl?.textAlignment = meta0?.textAlignment ?? NSTextAlignment.center
-            
          
             if let bgBox = meta0?.background_box, bgBox == "true" {
                 if let alpa = meta0?.bgBoxOpacity, alpa != 0.0 {
@@ -91,13 +92,13 @@ class ContentImageCVCell: UICollectionViewCell {
             }else {
                 self.headerTextLbl?.backgroundColor = .clear
             }
-            
+            */
         }
     }
     
     var component1 : ContentPageComponent? {
         didSet {
-            self.setContentImage(component1?.file ?? "")
+            //self.setContentImage(component1?.file ?? "")
         }
     }
     
@@ -222,6 +223,14 @@ class ContentImageCVCell: UICollectionViewCell {
                 component.reset()
             }
         }
+    }
+    
+    //MARK: IBActions
+    @IBAction func readMoreButtonPressed(_ sender: UIButton) {
+        //let vc = UIStoryboard(name: "Content", bundle: nil).instantiateViewController(withIdentifier: "ShowContentVC") as! ShowContentVC
+        //vc.ambassadorship = amb
+        //vc.user = user
+        //self.navigationController.pushViewController(vc, animated: true)
     }
 
 }

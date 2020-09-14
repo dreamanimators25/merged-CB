@@ -357,7 +357,7 @@ extension BrandsViewController: UICollectionViewDelegate, UICollectionViewDataSo
             return
         }
         if user!.isCurrentUser {
-            
+        
             let contentViewController = UIStoryboard(name: "Content", bundle: nil).instantiateViewController(withIdentifier: "ContentController") as! ContentSetupViewController
             //contentViewController.ambassadorship = ambassadorships[indexPath.row + 1]
             contentViewController.ambassadorship = ambassadorships[indexPath.row]
@@ -368,6 +368,7 @@ extension BrandsViewController: UICollectionViewDelegate, UICollectionViewDataSo
             //present(contentViewController, animated: true, completion: nil)
             navigationController?.pushViewController(contentViewController, animated: true)
             //show(contentViewController, sender: nil)
+            
         }
     }
 }

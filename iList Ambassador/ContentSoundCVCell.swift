@@ -70,12 +70,12 @@ class ContentSoundCVCell: UICollectionViewCell {
             let meta0 = component0?.meta
             
             //HEADER TEXT
-            //self.headerTextLbl?.text = meta0?.text ?? ""
-            self.headerTextLbl?.text = " \(meta0?.text ?? "") "
+            self.headerTextLbl?.text = " \(meta0?.text ?? "") ".capitalized
+            
+            /*
             self.headerTextLbl?.font = meta0?.font
             self.headerTextLbl?.textColor = meta0?.color
             self.headerTextLbl?.textAlignment = meta0?.textAlignment ?? NSTextAlignment.center
-            
          
             if let bgBox = meta0?.background_box, bgBox == "true" {
                 if let alpa = meta0?.bgBoxOpacity, alpa != 0.0 {
@@ -92,18 +92,20 @@ class ContentSoundCVCell: UICollectionViewCell {
             }else {
                 self.headerTextLbl?.backgroundColor = .clear
             }
-            
+            */
         }
     }
     
     var component1 : ContentPageComponent? {
         didSet {
+            /*
             let width = 0.75*SCREENSIZE.width
             music = ContentMusic(frame: CGRect(x: 0, y: 0,width: width, height: width*0.95), file: self.component1?.file ?? "", thumb: self.component1?.thumb, CNTR: CGPoint.init(x: self.contentView.frame.midX, y: self.contentView.frame.midY))
             
             self.componentViews.append(music!)
             music!.center = self.center
             self.addSubview(music!)
+            */
         }
     }
     
@@ -222,6 +224,11 @@ class ContentSoundCVCell: UICollectionViewCell {
                 component.reset()
             }
         }
+    }
+    
+    //MARK: IBActions
+    @IBAction func readMoreButtonPressed(_ sender: UIButton) {
+        print("Hello")
     }
     
 }

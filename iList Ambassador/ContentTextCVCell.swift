@@ -69,12 +69,12 @@ class ContentTextCVCell: UICollectionViewCell {
             let meta0 = component0?.meta
             
             //HEADER TEXT
-            //self.headerTextLbl?.text = meta0?.text ?? ""
-            self.headerTextLbl?.text = " \(meta0?.text ?? "") "
+            self.headerTextLbl?.text = " \(meta0?.text ?? "") ".capitalized
+            
+            /*
             self.headerTextLbl?.font = meta0?.font
             self.headerTextLbl?.textColor = meta0?.color
             self.headerTextLbl?.textAlignment = meta0?.textAlignment ?? NSTextAlignment.center
-            
          
             if let bgBox = meta0?.background_box, bgBox == "true" {
                 if let alpa = meta0?.bgBoxOpacity, alpa != 0.0 {
@@ -91,12 +91,13 @@ class ContentTextCVCell: UICollectionViewCell {
             }else {
                 self.headerTextLbl?.backgroundColor = .clear
             }
-            
+            */
         }
     }
 
     var component1 : ContentPageComponent? {
         didSet {
+            /*
             //CONTENT TEXT
             let meta1 = component1?.meta
             
@@ -121,7 +122,7 @@ class ContentTextCVCell: UICollectionViewCell {
             }else {
                 self.contentTextView?.backgroundColor = .clear
             }
-            
+            */
         }
     }
     
@@ -245,6 +246,11 @@ class ContentTextCVCell: UICollectionViewCell {
                 component.reset()
             }
         }
+    }
+    
+    //MARK: IBActions
+    @IBAction func readMoreButtonPressed(_ sender: UIButton) {
+        print("Hello")
     }
 
 }
