@@ -25,6 +25,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
+                    <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qlb-jp-jbO">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Oix-Fa-cr9"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vr0-un-p3S">
+                        <rect key="frame" x="0.0" y="405" width="300" height="95"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                     <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pIw-jt-Rp5" customClass="YouTubePlayerView" customModule="YouTubePlayer">
                         <rect key="frame" x="30" y="125" width="240" height="250"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -63,20 +74,27 @@
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="vr0-un-p3S" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5Wk-g3-P6C"/>
                 <constraint firstAttribute="bottom" secondItem="Oq9-aR-Cd7" secondAttribute="bottom" id="5ah-fc-Byk"/>
                 <constraint firstItem="0Lm-Rl-6Ch" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="8Cr-MD-8pn"/>
+                <constraint firstAttribute="bottom" secondItem="vr0-un-p3S" secondAttribute="bottom" id="9fV-Hy-5Sn"/>
                 <constraint firstAttribute="trailing" secondItem="Oq9-aR-Cd7" secondAttribute="trailing" id="Czm-qp-Ucj"/>
                 <constraint firstItem="pIw-jt-Rp5" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="EzH-dN-ku2"/>
                 <constraint firstAttribute="trailing" secondItem="pIw-jt-Rp5" secondAttribute="trailing" constant="30" id="Hld-Rm-Fzf"/>
+                <constraint firstAttribute="trailing" secondItem="vr0-un-p3S" secondAttribute="trailing" id="NKE-qh-JwM"/>
                 <constraint firstItem="pIw-jt-Rp5" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.5" id="P7J-C7-nRb"/>
+                <constraint firstItem="Qlb-jp-jbO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RlD-H5-gU3"/>
                 <constraint firstAttribute="trailing" secondItem="0Lm-Rl-6Ch" secondAttribute="trailing" constant="20" id="WeM-zr-qB3"/>
                 <constraint firstItem="cAb-Zd-ZI1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZA3-cW-uJi"/>
                 <constraint firstItem="pIw-jt-Rp5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="agI-KU-gLF"/>
                 <constraint firstItem="Oq9-aR-Cd7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="b71-Wl-z3l"/>
                 <constraint firstItem="5bq-5k-Igs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="bzx-eU-kc0"/>
+                <constraint firstAttribute="trailing" secondItem="Qlb-jp-jbO" secondAttribute="trailing" id="dKy-qN-s8b"/>
                 <constraint firstItem="pIw-jt-Rp5" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="fIE-b5-KJX"/>
+                <constraint firstItem="Qlb-jp-jbO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fik-MD-5P1"/>
                 <constraint firstItem="cAb-Zd-ZI1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="g3p-R4-7u8"/>
                 <constraint firstAttribute="trailing" secondItem="cAb-Zd-ZI1" secondAttribute="trailing" id="gbc-vZ-MdP"/>
+                <constraint firstItem="5bq-5k-Igs" firstAttribute="top" secondItem="vr0-un-p3S" secondAttribute="top" id="ggj-Qv-Q5G"/>
                 <constraint firstAttribute="bottom" secondItem="cAb-Zd-ZI1" secondAttribute="bottom" id="jV4-ss-zwS"/>
                 <constraint firstItem="0Lm-Rl-6Ch" firstAttribute="top" secondItem="5bq-5k-Igs" secondAttribute="bottom" constant="10" id="l03-Wh-7vh"/>
                 <constraint firstAttribute="bottom" secondItem="0Lm-Rl-6Ch" secondAttribute="bottom" constant="35" id="lXh-Vf-W0d"/>

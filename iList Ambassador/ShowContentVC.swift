@@ -76,24 +76,32 @@ class ShowContentVC: UIViewController {
                         
         case .Text:
           
-            self.bodyLbl.text = component1?.meta?.text
+            DispatchQueue.main.async {
+                self.imageHeightConstraint.constant = 0
+                self.soundHeightConstraint.constant = 0
+                self.videoHeightConstraint.constant = 0
+                self.youtubeHeightConstraint.constant = 0
+                self.vimeoHeightConstraint.constant = 0
+                
+                self.bodyLbl.text = self.component1?.meta?.text
+            }
                         
         case .Sound:
             
             DispatchQueue.main.async {
-                self.soundHeightConstraint.constant = self.view.bounds.height
+                //let wid = 0.75*SCREENSIZE.width
+                let wid = SCREENSIZE.width - 20
+                let heig = wid*0.95
+                self.soundHeightConstraint.constant = heig
                 self.imageHeightConstraint.constant = 0
                 self.videoHeightConstraint.constant = 0
                 self.youtubeHeightConstraint.constant = 0
                 self.vimeoHeightConstraint.constant = 0
-            }
             
-            DispatchQueue.main.async {
                 if let file = self.component1?.file {
-                    let width = 0.75*SCREENSIZE.width
+                    let width = SCREENSIZE.width - 20
                     let music = ContentMusic(frame: CGRect(x: 0, y: 0,width: width, height: width*0.95), file: file, thumb: self.component1?.thumb, CNTR: CGPoint.init(x: self.ContentViewSound.frame.midX, y: self.ContentViewSound.frame.midY))
                     
-                    music.center = self.ContentViewSound.center
                     self.ContentViewSound.addSubview(music)
                 }
             }
@@ -106,9 +114,7 @@ class ShowContentVC: UIViewController {
                 self.soundHeightConstraint.constant = 0
                 self.youtubeHeightConstraint.constant = 0
                 self.vimeoHeightConstraint.constant = 0
-            }
             
-            DispatchQueue.main.async {
                 if let file = self.component1?.file {
                     let video = ContentVideo(frame: CGRect(x: 0, y: 0,width: self.view.bounds.width, height: self.view.bounds.height), file: file, inlinePlayer: true)
                     
@@ -166,6 +172,12 @@ class ShowContentVC: UIViewController {
     //MARK: IBActions
     @IBAction func backBtnClicked(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func playVimeoButtonClicked(_ sender: UIButton) {
+        if let vim = loadVimeoPlayer {
+            vim(vimeoUrl ?? "")
+        }
     }
     
     @IBAction func goThereBtnClicked(_ sender: Any) {

@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Xmo-na-B4U">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667.00000000000182"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CHI-I0-bRZ">
@@ -200,10 +200,10 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewS-gu-9nH">
-                                                    <rect key="frame" x="20" y="528" width="335" height="40"/>
+                                                    <rect key="frame" x="20" y="518" width="335" height="50"/>
                                                     <color key="backgroundColor" red="0.0" green="0.67450980390000004" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="UhQ-J8-S9M"/>
+                                                        <constraint firstAttribute="height" constant="50" id="UhQ-J8-S9M"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
                                                     <state key="normal" title="Go There">
@@ -358,10 +358,10 @@
                                                     <cells/>
                                                 </collectionView>
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUp-QJ-wOF">
-                                                    <rect key="frame" x="20" y="454" width="280" height="40"/>
+                                                    <rect key="frame" x="20" y="444" width="280" height="50"/>
                                                     <color key="backgroundColor" red="0.0" green="0.67450980390000004" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="jz7-Ss-Ra9"/>
+                                                        <constraint firstAttribute="height" constant="50" id="jz7-Ss-Ra9"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
                                                     <state key="normal" title="Go There">
@@ -469,14 +469,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mf3-vq-RuO">
-                                <rect key="frame" x="87.5" y="74" width="50" height="50"/>
+                                <rect key="frame" x="95" y="64" width="35" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="0b2-yt-tPA"/>
-                                    <constraint firstAttribute="height" constant="50" id="5Y4-f9-jO5"/>
+                                    <constraint firstAttribute="width" constant="35" id="0b2-yt-tPA"/>
+                                    <constraint firstAttribute="height" constant="35" id="5Y4-f9-jO5"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN8-Ax-SVC">
-                                <rect key="frame" x="147.5" y="99" width="0.0" height="0.0"/>
+                                <rect key="frame" x="140" y="81.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -515,7 +515,7 @@
                             <constraint firstItem="mf3-vq-RuO" firstAttribute="centerX" secondItem="sVf-Wr-EAV" secondAttribute="centerX" multiplier="0.6" id="YaW-7c-kub"/>
                             <constraint firstItem="NpS-gZ-pb2" firstAttribute="top" secondItem="x00-Co-ay2" secondAttribute="top" constant="22" id="Z2O-H2-nDh"/>
                             <constraint firstItem="CHI-I0-bRZ" firstAttribute="trailing" secondItem="x00-Co-ay2" secondAttribute="trailing" id="fve-5j-32B"/>
-                            <constraint firstItem="mf3-vq-RuO" firstAttribute="top" secondItem="x00-Co-ay2" secondAttribute="top" constant="30" id="gBU-tp-wBu"/>
+                            <constraint firstItem="mf3-vq-RuO" firstAttribute="top" secondItem="x00-Co-ay2" secondAttribute="top" constant="20" id="gBU-tp-wBu"/>
                             <constraint firstItem="uUb-D0-P08" firstAttribute="width" secondItem="8bf-VS-xdS" secondAttribute="width" id="jFZ-wp-crm"/>
                             <constraint firstItem="gN8-Ax-SVC" firstAttribute="centerY" secondItem="mf3-vq-RuO" secondAttribute="centerY" id="mzk-to-OQC"/>
                             <constraint firstItem="CHI-I0-bRZ" firstAttribute="top" secondItem="x00-Co-ay2" secondAttribute="top" id="nkM-Ej-S9K"/>
@@ -865,9 +865,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZU-0O-vcf">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="827"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnF-pc-qwA">
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnF-pc-qwA">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D4H-YT-k5k">
@@ -884,12 +884,12 @@
                                             </view>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgN-ea-BvV">
                                                 <rect key="frame" x="20" y="272" width="335" height="0.0"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djE-D6-PSN">
-                                                <rect key="frame" x="0.0" y="277" width="375" height="100"/>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djE-D6-PSN">
+                                                <rect key="frame" x="0.0" y="282" width="375" height="100"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u7F-mz-2Ee">
                                                         <rect key="frame" x="20" y="10" width="335" height="80"/>
@@ -904,16 +904,19 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AA-Jt-Q6v">
-                                                <rect key="frame" x="20" y="382" width="335" height="0.0"/>
+                                                <rect key="frame" x="20" y="387" width="335" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUk-ZQ-2wH">
-                                                <rect key="frame" x="0.0" y="387" width="375" height="100"/>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUk-ZQ-2wH">
+                                                <rect key="frame" x="0.0" y="392" width="375" height="120"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UlH-Yk-wQ2">
-                                                        <rect key="frame" x="20" y="10" width="335" height="80"/>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UlH-Yk-wQ2">
+                                                        <rect key="frame" x="20" y="10" width="335" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="hWD-7w-WE8"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
@@ -921,13 +924,12 @@
                                                     <constraint firstItem="UlH-Yk-wQ2" firstAttribute="leading" secondItem="HUk-ZQ-2wH" secondAttribute="leading" constant="20" id="XIa-kD-C4E"/>
                                                     <constraint firstItem="UlH-Yk-wQ2" firstAttribute="top" secondItem="HUk-ZQ-2wH" secondAttribute="top" constant="10" id="ccT-Mj-ylZ"/>
                                                     <constraint firstAttribute="bottom" secondItem="UlH-Yk-wQ2" secondAttribute="bottom" constant="10" id="nL2-mu-nub"/>
-                                                    <constraint firstAttribute="height" constant="100" id="tvu-uV-Aib"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUa-uM-loX">
-                                                <rect key="frame" x="0.0" y="492" width="375" height="100"/>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUa-uM-loX">
+                                                <rect key="frame" x="0.0" y="517" width="375" height="100"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECF-lV-17g">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECF-lV-17g">
                                                         <rect key="frame" x="20" y="10" width="335" height="80"/>
                                                     </view>
                                                 </subviews>
@@ -939,10 +941,10 @@
                                                     <constraint firstAttribute="trailing" secondItem="ECF-lV-17g" secondAttribute="trailing" constant="20" id="pxY-D4-7LP"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SbV-Gz-laZ">
-                                                <rect key="frame" x="0.0" y="597" width="375" height="100"/>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SbV-Gz-laZ">
+                                                <rect key="frame" x="0.0" y="622" width="375" height="100"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A73-Ql-N3H" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A73-Ql-N3H" customClass="YouTubePlayerView" customModule="YouTubePlayer">
                                                         <rect key="frame" x="20" y="10" width="335" height="80"/>
                                                     </view>
                                                 </subviews>
@@ -954,11 +956,36 @@
                                                     <constraint firstAttribute="bottom" secondItem="A73-Ql-N3H" secondAttribute="bottom" constant="10" id="sSV-dv-SNP"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQ2-40-eO5">
-                                                <rect key="frame" x="0.0" y="702" width="375" height="100"/>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQ2-40-eO5">
+                                                <rect key="frame" x="0.0" y="727" width="375" height="100"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHy-y0-xVJ">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHy-y0-xVJ">
                                                         <rect key="frame" x="20" y="10" width="335" height="80"/>
+                                                        <subviews>
+                                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbL-NV-qar">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjJ-3x-umd">
+                                                                        <rect key="frame" x="134.5" y="7" width="66" height="66"/>
+                                                                        <state key="normal" image="play-button"/>
+                                                                        <connections>
+                                                                            <action selector="playVimeoButtonClicked:" destination="UvD-HN-evw" eventType="touchUpInside" id="Pwv-rc-etz"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="PjJ-3x-umd" firstAttribute="centerY" secondItem="gbL-NV-qar" secondAttribute="centerY" id="YWD-3v-y8M"/>
+                                                                    <constraint firstItem="PjJ-3x-umd" firstAttribute="centerX" secondItem="gbL-NV-qar" secondAttribute="centerX" id="tu1-2Z-SkK"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="gbL-NV-qar" firstAttribute="top" secondItem="fHy-y0-xVJ" secondAttribute="top" id="3Xe-fX-Vwi"/>
+                                                            <constraint firstItem="gbL-NV-qar" firstAttribute="leading" secondItem="fHy-y0-xVJ" secondAttribute="leading" id="89V-E8-hhv"/>
+                                                            <constraint firstAttribute="trailing" secondItem="gbL-NV-qar" secondAttribute="trailing" id="Dhu-Ec-LKu"/>
+                                                            <constraint firstAttribute="bottom" secondItem="gbL-NV-qar" secondAttribute="bottom" id="ryX-T9-PUp"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
@@ -989,7 +1016,7 @@
                                             <constraint firstAttribute="trailing" secondItem="OnF-pc-qwA" secondAttribute="trailing" id="dLt-xd-AKk"/>
                                             <constraint firstAttribute="trailing" secondItem="SbV-Gz-laZ" secondAttribute="trailing" id="dQO-Ic-mUU"/>
                                             <constraint firstItem="UgN-ea-BvV" firstAttribute="top" secondItem="OnF-pc-qwA" secondAttribute="bottom" constant="5" id="e2w-SN-4QS"/>
-                                            <constraint firstItem="djE-D6-PSN" firstAttribute="top" secondItem="UgN-ea-BvV" secondAttribute="bottom" constant="5" id="eAA-vj-90s"/>
+                                            <constraint firstItem="djE-D6-PSN" firstAttribute="top" secondItem="UgN-ea-BvV" secondAttribute="bottom" constant="10" id="eAA-vj-90s"/>
                                             <constraint firstItem="OnF-pc-qwA" firstAttribute="leading" secondItem="8ZU-0O-vcf" secondAttribute="leading" id="f6l-XL-5VN"/>
                                             <constraint firstAttribute="trailing" secondItem="djE-D6-PSN" secondAttribute="trailing" id="lFZ-cf-ozb"/>
                                             <constraint firstItem="LUa-uM-loX" firstAttribute="leading" secondItem="8ZU-0O-vcf" secondAttribute="leading" id="phd-GN-rnm"/>
@@ -1059,7 +1086,7 @@
                         <outlet property="headerLbl" destination="UgN-ea-BvV" id="Ybr-Jz-O3L"/>
                         <outlet property="imageHeightConstraint" destination="XVr-Cw-ESJ" id="qAA-CG-XJ3"/>
                         <outlet property="pageBackgroundView" destination="OnF-pc-qwA" id="S5i-mj-rGp"/>
-                        <outlet property="soundHeightConstraint" destination="tvu-uV-Aib" id="UFj-79-Cws"/>
+                        <outlet property="soundHeightConstraint" destination="hWD-7w-WE8" id="hOX-v1-jVG"/>
                         <outlet property="videoHeightConstraint" destination="EFV-vx-JTe" id="UpM-Nf-l9e"/>
                         <outlet property="vimeoHeightConstraint" destination="NbS-3U-KrC" id="DwF-jr-Qb9"/>
                         <outlet property="youtubeHeightConstraint" destination="4oz-BO-8Ra" id="erR-YU-tjA"/>
@@ -1095,10 +1122,11 @@
         <image name="close" width="66" height="57"/>
         <image name="facebook" width="104" height="90"/>
         <image name="paper-plane-o" width="64" height="64"/>
+        <image name="play-button" width="66" height="66"/>
         <image name="twitter" width="104" height="90"/>
         <image name="use" width="99" height="87"/>
         <image name="use_blank" width="99" height="87"/>
-        <image name="white-left" width="22" height="36"/>
+        <image name="white-left" width="11" height="18"/>
         <image name="white_bg" width="4500" height="7125"/>
     </resources>
     <inferredMetricsTieBreakers>

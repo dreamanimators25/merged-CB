@@ -25,6 +25,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
+                    <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2f-Cl-wa1">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Feo-wO-szp"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUk-Sm-hzI">
+                        <rect key="frame" x="0.0" y="405" width="300" height="95"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeU-kI-WGx">
                         <rect key="frame" x="20" y="405" width="260" height="0.0"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -79,21 +90,28 @@
                 <constraint firstAttribute="bottom" secondItem="ggu-w7-G1W" secondAttribute="bottom" id="4wR-TC-GBw"/>
                 <constraint firstItem="ETw-Ka-WU2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7ga-P4-Va7"/>
                 <constraint firstItem="ggu-w7-G1W" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7oo-tc-VQb"/>
+                <constraint firstItem="MUk-Sm-hzI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7qf-QD-SrY"/>
                 <constraint firstItem="2J6-B8-sM6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="7yI-TD-XfS"/>
                 <constraint firstAttribute="trailing" secondItem="2J6-B8-sM6" secondAttribute="trailing" constant="20" id="8ij-HD-lGr"/>
                 <constraint firstItem="g9g-7W-Pzt" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Eh0-mO-P7x"/>
                 <constraint firstItem="1yF-bq-dFd" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="FKY-Hf-K4q"/>
+                <constraint firstItem="I2f-Cl-wa1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GCf-Vz-Clf"/>
                 <constraint firstItem="g9g-7W-Pzt" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Iyc-rJ-XRc"/>
                 <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="g9g-7W-Pzt" secondAttribute="trailing" constant="30" id="Kkw-Kf-CYW"/>
                 <constraint firstItem="1yF-bq-dFd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="LOA-7G-yLK"/>
                 <constraint firstAttribute="trailing" secondItem="ETw-Ka-WU2" secondAttribute="trailing" id="Pmg-UE-dzu"/>
+                <constraint firstAttribute="bottom" secondItem="MUk-Sm-hzI" secondAttribute="bottom" id="Q3r-vm-lGu"/>
                 <constraint firstAttribute="bottom" secondItem="ETw-Ka-WU2" secondAttribute="bottom" id="Qrp-pn-fiJ"/>
                 <constraint firstAttribute="bottom" secondItem="2J6-B8-sM6" secondAttribute="bottom" constant="35" id="Qvz-cF-auF"/>
                 <constraint firstItem="g9g-7W-Pzt" firstAttribute="leading" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="Rq3-bd-M7Z"/>
+                <constraint firstItem="I2f-Cl-wa1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Sgq-bH-0UY"/>
                 <constraint firstItem="1yF-bq-dFd" firstAttribute="height" relation="lessThanOrEqual" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.5" id="Syp-je-OWz"/>
                 <constraint firstItem="SeU-kI-WGx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="cJi-jO-h9K"/>
                 <constraint firstItem="1yF-bq-dFd" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="d8Q-F3-OFr"/>
                 <constraint firstItem="g9g-7W-Pzt" firstAttribute="height" relation="lessThanOrEqual" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.5" id="fOf-rA-cUG"/>
+                <constraint firstAttribute="trailing" secondItem="MUk-Sm-hzI" secondAttribute="trailing" id="gkx-rp-xp7"/>
+                <constraint firstItem="SeU-kI-WGx" firstAttribute="top" secondItem="MUk-Sm-hzI" secondAttribute="top" id="h97-dv-ejb"/>
+                <constraint firstAttribute="trailing" secondItem="I2f-Cl-wa1" secondAttribute="trailing" id="hsi-i4-tJg"/>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1yF-bq-dFd" secondAttribute="trailing" constant="30" id="rXy-DP-d7R"/>
                 <constraint firstAttribute="trailing" secondItem="ggu-w7-G1W" secondAttribute="trailing" id="seF-Fo-fxg"/>
                 <constraint firstAttribute="trailing" secondItem="SeU-kI-WGx" secondAttribute="trailing" constant="20" id="td3-6J-EJ2"/>
